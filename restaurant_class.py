@@ -7,7 +7,6 @@ import pandas as pd
 
 MAX_PAGES = 2
 
-
 # Scraping 100 best restaurants in America of 2017
 r = requests.get('https://www.opentable.com/m/best-restaurants-in-america-for-2017/')
 soup = BeautifulSoup(r.content, 'html.parser')
@@ -108,8 +107,8 @@ class Restaurant:
         ambience = []
         vips = []
 
-        r = requests.get(self.link)                                 #TODO can be self.r
-        soup_rest = BeautifulSoup(r.content, 'html.parser')         #TODO can be self.soup_rest
+        r = requests.get(self.link)  # TODO can be self.r
+        soup_rest = BeautifulSoup(r.content, 'html.parser')  # TODO can be self.soup_rest
         # Geting last_page
         pages = soup_rest.find_all('button', class_='reviewUpdateParameter oc-reviews-b0c77e5f')
         for last_page in pages: pass
@@ -139,7 +138,7 @@ class Restaurant:
                 dates.append(date)
 
                 vips.append(vip)
-        return (places, comments, overall, food, service, ambience, dates, vips)
+        return places, comments, overall, food, service, ambience, dates, vips
 
 
 food_rating = []
@@ -193,11 +192,12 @@ for link in rest_links:
     except:
         nums_of_reviews.append('None')
 
-#Do data base
-d = {'Name': restaurants, 'Food rating': food_rating, 'Service rating': service_rating, 'Ambience rating': ambience_rating, 'Value rating': value_rating,
-    'Rating distribution': rating_distributions, 'Noise': noise_status, 'Recommendations': recommendations, 'No. of reviews': nums_of_reviews}
+# Do data base
+d = {'Name': restaurants, 'Food rating': food_rating, 'Service rating': service_rating,
+     'Ambience rating': ambience_rating, 'Value rating': value_rating,
+     'Rating distribution': rating_distributions, 'Noise': noise_status, 'Recommendations': recommendations,
+     'No. of reviews': nums_of_reviews}
 df = pd.DataFrame(data=d)
 
 print(df)
 print(temp_res.get_all_reviews())
-
