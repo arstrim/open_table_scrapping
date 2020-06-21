@@ -1,4 +1,4 @@
-import re
+import re 
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
@@ -12,11 +12,14 @@ r = requests.get('https://www.opentable.com/m/best-restaurants-in-america-for-20
 soup = BeautifulSoup(r.content, 'html.parser')
 restaurants = []
 rest_links = []
+
+# Collecting restaurants names and urls
 for rest in soup.find_all('div', class_='restaurant tablet--flex'):
     restaurants.append(rest.find('h3').text)
     rest_links.append('https://www.opentable.com/' + rest.find('a', class_='rest-profile-link').get('href'))
 
 
+# Creating Restaurant class and collecting features for each Restaurant object
 class Restaurant:
     def __init__(self, link):
         self.link = link
@@ -141,6 +144,7 @@ class Restaurant:
         return places, comments, overall, food, service, ambience, dates, vips
 
 
+# Looping over all restaurants links to get the features
 food_rating = []
 service_rating = []
 ambience_rating = []
@@ -192,7 +196,7 @@ for link in rest_links:
     except:
         nums_of_reviews.append('None')
 
-# Do data base
+# Creating data base
 d = {'Name': restaurants, 'Food rating': food_rating, 'Service rating': service_rating,
      'Ambience rating': ambience_rating, 'Value rating': value_rating,
      'Rating distribution': rating_distributions, 'Noise': noise_status, 'Recommendations': recommendations,
