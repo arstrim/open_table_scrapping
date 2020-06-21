@@ -11,10 +11,9 @@ where HTTP requests are done by requests library and then we parse HTML pages us
 
 
 ## Installation
-Install wit pip: 
+[This file](https://github.com/arstrim/project/blob/master/requirements.txt) should be downloaded to later install it like:
 ```
-pip install bs4
-pip install requests
+pip install -r requirements.txt
 ```
 
 ## Contributing
