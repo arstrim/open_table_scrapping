@@ -17,7 +17,7 @@ def write_csv(name, links):
     """
     print('Writing reviews.csv')
     with open('reviews.csv', 'w') as f:
-        f.write('Name,Place,Comment,Overall,Food,Service,Ambience,Date,Vip')
+        f.write('Name,Place,Comment,Overall,Food,Service,Ambience,Date,Vip\n')
     for n_res in range(len(links)):
         print('Writing', name[n_res], n_res, "of", len(links))
         temp_res = Restaurant(links[n_res])
