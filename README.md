@@ -1,8 +1,9 @@
-# Project Title 
-![image] (https://mma.prnewswire.com/media/178602/open_table_logo.jpg?p=publish)
+![image] (https://digital.hbs.edu/platform-digit/wp-content/uploads/sites/2/2015/10/opentable.jpg)
 
+# Project Title 
 Data mining project - Checkpoint #1
 
+#  Scope
 In this step we web scrape data of 100 restaurants from OpenTable website.
 
 main URL: https://www.opentable.com/m/best-restaurants-in-america-for-2017/
