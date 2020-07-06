@@ -1,5 +1,5 @@
 # Project Title 
-![image](https://digital.hbs.edu/platform-digit/wp-content/uploads/sites/2/2015/10/opentable.jpg)
+![image] (https://mma.prnewswire.com/media/178602/open_table_logo.jpg?p=publish)
 
 Data mining project - Checkpoint #1
 
@@ -10,6 +10,8 @@ main URL: https://www.opentable.com/m/best-restaurants-in-america-for-2017/
 We create a main class 'Restaurant', and for each one of the methods is a feature we extract from the restaurant link 
 where HTTP requests are done by requests library and then we parse HTML pages using BeautifulSoup library.
 
+# Authors 
+Ariela Strimling and Areej Eweida
 
 ## Installation
 [This file](https://github.com/arstrim/project/blob/master/requirements.txt) should be downloaded to later install it like:
