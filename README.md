@@ -1,4 +1,4 @@
-![image](https://digital.hbs.edu/platform-digit/wp-content/uploads/sites/2/2015/10/opentable.jpg)
+![image](https://logodix.com/logo/44715.png)
 
 # Project Title 
 Data mining project - Checkpoint #1
