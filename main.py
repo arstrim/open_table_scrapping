@@ -7,6 +7,7 @@ from datetime import datetime
 from restaurant_class import Restaurant
 from restaurant_info import restaurant_info
 from get_reviews import get_all_reviews
+from build_db import build_db
 
 
 LINK = 'https://www.opentable.com/m/best-restaurants-in-america-for-2017/'
@@ -48,7 +49,7 @@ def write_csv(name, links):
 
     #Writing restaurants
     print('Writing 100restaurants.csv')
-    restaurant_info(links, name).to_csv('100restaurants.csv')
+    # restaurant_info(links, name).to_csv('100restaurants.csv')
 
 
 
@@ -75,12 +76,16 @@ def main():
     """
     parser = argparse.ArgumentParser()
     parser.add_argument('-w', '-write', action='store_true')
+    parser.add_argument('-db', '-database', action='store_true')
     args = parser.parse_args()
 
     if args.w:
         print("writting csv")
         (rest_links, restaurants) = get_links_and_names()
         write_csv(restaurants, rest_links)
+    if args.db:
+        # print('database')
+        build_db()
 
 
 if __name__ == '__main__':

@@ -18,9 +18,14 @@ def get_date(review, scrap_date):
     date = review.find('span', class_='oc-reviews-47b8de40').text
     try:
         if date[-1] == 'o':
-            date = datetime.today() + today.timedelta(int(date[6]))
-        else:
+            if type(date[6])==int:
+                date = datetime.today() + today.timedelta(int(date[6]))
+            else:
+                date = datetime.today() + today.timedelta(1)
+        elif date[0] == 'D':
             date = datetime.strptime(date[9:], '%B %d, %Y')
+        else:
+            date = datetime.strptime(date[12:], '%B %d, %Y')
     except:
         date = None
     else:
