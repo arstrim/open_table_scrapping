@@ -74,7 +74,7 @@ def get_comment_info(review, scrap_date):
     return place, rating, comment, date, vip, user, n_rev
 
 
-def get_reviews(rest_link, scrap_date):
+def get_reviews(rest_link, rest_name, scrap_date):
     """
     Initializes the lists of features.
     get_comment_info() for every review.
@@ -83,6 +83,7 @@ def get_reviews(rest_link, scrap_date):
     INPUT: scrap_date: datetime object, only returns comments after that
     OUTPUT: tuple of lists: (places, comments, overall, food, service, ambience, dates, vips, users, n_revs)
     """
+    names = []
     places = []
     comments = []
     dates = []
@@ -112,6 +113,7 @@ def get_reviews(rest_link, scrap_date):
         # Finds all the reviews
         reviews = soup_rest.find_all('div', class_='oc-reviews-5a88ccc3')
         for rev in reviews:
+            names.append(rest_name)
             (place, rating, comment, date, vip, user, n_rev) = get_comment_info(rev, scrap_date)
             if all(ele is None for ele in (place, rating, comment, date, vip, user, n_rev)):
                 continue
@@ -142,11 +144,11 @@ def get_reviews(rest_link, scrap_date):
                 users.append(user)
                 n_revs.append(int(n_rev))
 
-    return places, comments, overall, food, service, ambience, dates, vips, users, n_revs
+    return names, places, comments, overall, food, service, ambience, dates, vips, users, n_revs
 
 
 def get_all_reviews(rest_links, restaurants, scrap_date):
-    # all_names = []
+    all_names = []
     all_places = []
     all_comments = []
     all_dates = []
@@ -159,9 +161,9 @@ def get_all_reviews(rest_links, restaurants, scrap_date):
     all_n_revs = []
     for i in range(len(rest_links)):
         print('Now scraping reviews of restaurant {i} out of {total}'.format(i=i+1, total=len(rest_links)))
-        (places, comments, overall, food, service, ambience, dates, vips, users, n_revs) = \
-            get_reviews(rest_links[i], scrap_date)
-        # all_names += restaurants[i] * len(places)
+        (names, places, comments, overall, food, service, ambience, dates, vips, users, n_revs) = \
+            get_reviews(rest_links[i], restaurants[i], scrap_date)
+        all_names += names
         all_comments += comments
         all_places += places
         all_food += food
@@ -174,7 +176,7 @@ def get_all_reviews(rest_links, restaurants, scrap_date):
         all_n_revs += n_revs
 
     # Creating data base
-    d = {'Place': all_places, 'Comments': all_comments, 'Overall rating': all_overall,
+    d = {'Name': all_names, 'Place': all_places, 'Comments': all_comments, 'Overall rating': all_overall,
          'Food rating': all_food, 'Service rating': all_service, 'Ambience rating': all_ambience,
          'Dates': all_dates, "VIP": all_vips, 'Users': all_users, 'No. of reviews': all_n_revs}
 
