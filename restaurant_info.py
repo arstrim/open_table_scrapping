@@ -1,12 +1,11 @@
-import pandas as pd
+# import pandas as pd
 from restaurant_class import Restaurant
+import pandas as pd
+
 
 def restaurant_info(rest_links, restaurants):
     """
-    Build a data frame of all the restaurants
-    :param rest_links: list of restaurant links
-    :param restaurants: list of restaurants names
-    :return: df: data frame of the general info of the restaurants
+    scrape info of all the restaurants
     """
     # Looping over all restaurants links to get the features
     food_rating = []
@@ -18,8 +17,11 @@ def restaurant_info(rest_links, restaurants):
     recommendations = []
     nums_of_reviews = []
     i = 0
-    for link in rest_links:
-        print(link, i)
+
+    print('Writing 100restaurants.csv')
+
+    for idx, link in enumerate(rest_links):
+        print('Writing', idx, "of", len(rest_links))
         i += 1
         temp_res = Restaurant(link)
         try:
@@ -67,6 +69,7 @@ def restaurant_info(rest_links, restaurants):
          'Ambience rating': ambience_rating, 'Value rating': value_rating,
          'Rating distribution': rating_distributions, 'Noise': noise_status, 'Recommendations': recommendations,
          'No. of reviews': nums_of_reviews}
-    df = pd.DataFrame(data=d)
 
-    return df
+    df = pd.DataFrame(data=d)
+    df.to_csv("100restaurants.csv")
+

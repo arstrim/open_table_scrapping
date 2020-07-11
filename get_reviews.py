@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import re
 from datetime import datetime
 import datetime as today
-
+import pandas as pd
 
 MAX_PAGES = 2
 
@@ -18,7 +18,7 @@ def get_date(review, scrap_date):
     date = review.find('span', class_='oc-reviews-47b8de40').text
     try:
         if date[-1] == 'o':
-            if type(date[6])==int:
+            if type(date[6]) == int:
                 date = datetime.today() + today.timedelta(int(date[6]))
             else:
                 date = datetime.today() + today.timedelta(1)
@@ -74,12 +74,11 @@ def get_comment_info(review, scrap_date):
     return place, rating, comment, date, vip, user, n_rev
 
 
-def get_all_reviews(rest_link, scrap_date):
+def get_reviews(rest_link, scrap_date):
     """
     Initializes the lists of features.
     get_comment_info() for every review.
     Returns a list per feature of all reviews.
-
     INPUT: rest_link: string of the restaurant link
     INPUT: scrap_date: datetime object, only returns comments after that
     OUTPUT: tuple of lists: (places, comments, overall, food, service, ambience, dates, vips, users, n_revs)
@@ -99,8 +98,8 @@ def get_all_reviews(rest_link, scrap_date):
     soup_rest = BeautifulSoup(r.content, 'html.parser')
     # Geting last_page
     pages = soup_rest.find_all('button', class_='reviewUpdateParameter oc-reviews-b0c77e5f')
-    for last_page in pages: pass
-    last_page = min(MAX_PAGES, int(last_page.text))
+    last_page = len(pages) - 1
+    last_page = min(MAX_PAGES, last_page)
 
     # looping through pages 1 to last_page (min(MAX_PAGES, last_page))
     for i in range(1, last_page):
@@ -114,14 +113,14 @@ def get_all_reviews(rest_link, scrap_date):
         reviews = soup_rest.find_all('div', class_='oc-reviews-5a88ccc3')
         for rev in reviews:
             (place, rating, comment, date, vip, user, n_rev) = get_comment_info(rev, scrap_date)
-            if all(ele is None for ele in (place, rating, comment, date, vip, user, n_rev)) :
+            if all(ele is None for ele in (place, rating, comment, date, vip, user, n_rev)):
                 continue
             # Stores the variables in lists
             else:
                 places.append(place)
                 comments.append(comment)
                 try:
-                   overall.append(int(re.split(r'(\d)', rating)[1]))
+                    overall.append(int(re.split(r'(\d)', rating)[1]))
                 except:
                     overall.append(None)
                 try:
@@ -143,4 +142,41 @@ def get_all_reviews(rest_link, scrap_date):
                 users.append(user)
                 n_revs.append(int(n_rev))
 
-    return (places, comments, overall, food, service, ambience, dates, vips, users, n_revs)
+    return places, comments, overall, food, service, ambience, dates, vips, users, n_revs
+
+
+def get_all_reviews(rest_links, restaurants, scrap_date):
+    # all_names = []
+    all_places = []
+    all_comments = []
+    all_dates = []
+    all_overall = []
+    all_food = []
+    all_service = []
+    all_ambience = []
+    all_vips = []
+    all_users = []
+    all_n_revs = []
+    for i in range(len(rest_links)):
+        print('Now scraping reviews of restaurant {i} out of {total}'.format(i=i+1, total=len(rest_links)))
+        (places, comments, overall, food, service, ambience, dates, vips, users, n_revs) = \
+            get_reviews(rest_links[i], scrap_date)
+        # all_names += restaurants[i] * len(places)
+        all_comments += comments
+        all_places += places
+        all_food += food
+        all_overall += overall
+        all_service += service
+        all_ambience += ambience
+        all_dates += dates
+        all_vips += vips
+        all_users += users
+        all_n_revs += n_revs
+
+    # Creating data base
+    d = {'Place': all_places, 'Comments': all_comments, 'Overall rating': all_overall,
+         'Food rating': all_food, 'Service rating': all_service, 'Ambience rating': all_ambience,
+         'Dates': all_dates, "VIP": all_vips, 'Users': all_users, 'No. of reviews': all_n_revs}
+
+    df = pd.DataFrame(data=d)
+    df.to_csv("reviews.csv")

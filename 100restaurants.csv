@@ -1,101 +1,101 @@
 ,Name,Food rating,Service rating,Ambience rating,Value rating,Rating distribution,Noise,Recommendations,No. of reviews
-0,1770 House,4.7,4.8,4.7,4.2,"['Rated 5 by 79% people', 'Rated 4 by 16% people', 'Rated 3 by 4% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Quiet,92%,1035
-1,Arethusa al Tavolo,4.9,4.9,4.7,4.5,"['Rated 5 by 91% people', 'Rated 4 by 7% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Moderate,98%,1971
-2,Atera,4.9,4.9,4.9,4.5,"['Rated 5 by 96% people', 'Rated 4 by 2% people', 'Rated 3 by 1% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Quiet,99%,821
-3,Barclay Prime,4.8,4.8,4.8,4.3,"['Rated 5 by 89% people', 'Rated 4 by 7% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,95%,3475
-4,Barrique Venice,4.8,4.8,4.8,4.4,"['Rated 5 by 87% people', 'Rated 4 by 9% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,96%,486
+0,1770 House,4.7,4.8,4.7,4.2,"['Rated 5 by 80% people', 'Rated 4 by 16% people', 'Rated 3 by 4% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Quiet,93%,1035
+1,Arethusa al Tavolo,4.9,4.9,4.7,4.5,"['Rated 5 by 91% people', 'Rated 4 by 7% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Moderate,98%,1973
+2,Atera,4.9,4.9,4.9,4.5,"['Rated 5 by 96% people', 'Rated 4 by 2% people', 'Rated 3 by 1% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Quiet,99%,822
+3,Barclay Prime,4.8,4.8,4.8,4.3,"['Rated 5 by 89% people', 'Rated 4 by 7% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,95%,3476
+4,Barrique Venice,4.8,4.8,4.8,4.4,"['Rated 5 by 87% people', 'Rated 4 by 9% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,96%,489
 5,Bavette's,4.7,4.6,4.7,4.3,"['Rated 5 by 81% people', 'Rated 4 by 15% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,96%,2756
-6,Benu,4.9,4.9,4.7,4.4,"['Rated 5 by 93% people', 'Rated 4 by 4% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Quiet,95%,1607
+6,Benu,4.9,4.9,4.7,4.4,"['Rated 5 by 93% people', 'Rated 4 by 4% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Quiet,96%,1607
 7,Bida Manda Restaurant and Bar,4.8,4.8,4.7,4.6,"['Rated 5 by 88% people', 'Rated 4 by 9% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,97%,2959
-8,Bones,4.8,4.9,4.8,4.5,"['Rated 5 by 89% people', 'Rated 4 by 7% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,96%,7840
-9,BONDST,4.8,4.6,4.6,4.2,"['Rated 5 by 86% people', 'Rated 4 by 9% people', 'Rated 3 by 4% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,94%,1981
-10,Buccan,4.9,4.8,4.7,4.5,"['Rated 5 by 90% people', 'Rated 4 by 7% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,96%,2474
-11,Café Monarch,4.9,4.9,4.9,4.5,"['Rated 5 by 93% people', 'Rated 4 by 5% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Quiet,98%,3996
-12,Cafe Provence,4.9,4.9,4.8,4.7,"['Rated 5 by 94% people', 'Rated 4 by 5% people', 'Rated 3 by 0% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Quiet,99%,2600
-13,Charleston,None,None,None,None,"['Rated 5 by 97% people', 'Rated 4 by 3% people', 'Rated 3 by 0% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",None,None,3662
-14,Charleston Grill,4.8,4.9,4.8,4.5,"['Rated 5 by 90% people', 'Rated 4 by 7% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,95%,4491
-15,Chez Billy Sud,4.8,4.8,4.8,4.5,"['Rated 5 by 86% people', 'Rated 4 by 11% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Moderate,98%,1928
-16,chi SPACCA,4.8,4.7,4.6,4.2,"['Rated 5 by 83% people', 'Rated 4 by 10% people', 'Rated 3 by 5% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,92%,732
-17,Coppa,4.8,4.7,4.6,4.4,"['Rated 5 by 83% people', 'Rated 4 by 11% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,94%,729
-18,CRUST,4.8,4.8,4.6,4.7,"['Rated 5 by 87% people', 'Rated 4 by 8% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,96%,2072
+8,Bones,4.8,4.9,4.8,4.5,"['Rated 5 by 89% people', 'Rated 4 by 7% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,96%,7854
+9,BONDST,4.8,4.6,4.6,4.2,"['Rated 5 by 86% people', 'Rated 4 by 9% people', 'Rated 3 by 4% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,93%,1981
+10,Buccan,4.9,4.8,4.7,4.5,"['Rated 5 by 90% people', 'Rated 4 by 7% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,96%,2479
+11,Café Monarch,4.9,4.9,4.9,4.5,"['Rated 5 by 93% people', 'Rated 4 by 5% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Quiet,98%,4005
+12,Cafe Provence,4.9,4.9,4.8,4.7,"['Rated 5 by 94% people', 'Rated 4 by 5% people', 'Rated 3 by 0% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Quiet,99%,2607
+13,Charleston,None,None,None,None,"['Rated 5 by 96% people', 'Rated 4 by 4% people', 'Rated 3 by 0% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",None,None,3662
+14,Charleston Grill,4.8,4.9,4.8,4.5,"['Rated 5 by 90% people', 'Rated 4 by 7% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,96%,4491
+15,Chez Billy Sud,4.8,4.8,4.8,4.5,"['Rated 5 by 86% people', 'Rated 4 by 11% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Moderate,98%,1931
+16,chi SPACCA,4.8,4.7,4.6,4.2,"['Rated 5 by 83% people', 'Rated 4 by 10% people', 'Rated 3 by 5% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,93%,732
+17,Coppa,4.8,4.7,4.6,4.4,"['Rated 5 by 84% people', 'Rated 4 by 11% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,95%,740
+18,CRUST,4.8,4.8,4.6,4.7,"['Rated 5 by 87% people', 'Rated 4 by 8% people', 'Rated 3 by 3% people', 'Rated 2 by 2% people', 'Rated 1 by 1% people']",Moderate,96%,2073
 19,Daniel,4.8,4.9,4.8,4.4,"['Rated 5 by 87% people', 'Rated 4 by 9% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Quiet,94%,5980
-20,Del Posto,4.7,4.7,4.8,4.1,"['Rated 5 by 81% people', 'Rated 4 by 11% people', 'Rated 3 by 4% people', 'Rated 2 by 3% people', 'Rated 1 by 1% people']",Quiet,85%,6862
-21,Double Knot,4.8,4.8,4.8,4.5,"['Rated 5 by 87% people', 'Rated 4 by 9% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 1% people']",Moderate,95%,2331
-22,Fishing With Dynamite,4.9,4.8,4.7,4.5,"['Rated 5 by 90% people', 'Rated 4 by 8% people', 'Rated 3 by 1% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Moderate,96%,1475
-23,Frances,4.8,4.8,4.6,4.4,"['Rated 5 by 87% people', 'Rated 4 by 9% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,93%,3218
+20,Del Posto,4.7,4.7,4.8,4.1,"['Rated 5 by 81% people', 'Rated 4 by 11% people', 'Rated 3 by 5% people', 'Rated 2 by 3% people', 'Rated 1 by 1% people']",Quiet,84%,6862
+21,Double Knot,4.8,4.8,4.8,4.5,"['Rated 5 by 87% people', 'Rated 4 by 9% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 1% people']",Moderate,96%,2331
+22,Fishing With Dynamite,4.9,4.8,4.7,4.5,"['Rated 5 by 90% people', 'Rated 4 by 8% people', 'Rated 3 by 1% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Moderate,96%,1479
+23,Frances,4.8,4.8,4.6,4.4,"['Rated 5 by 87% people', 'Rated 4 by 9% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,94%,3218
 24,Gabriel Kreuther,4.7,4.7,4.7,4.2,"['Rated 5 by 83% people', 'Rated 4 by 10% people', 'Rated 3 by 4% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Quiet,91%,1593
-25,Geronimo,4.9,4.9,4.9,4.5,"['Rated 5 by 92% people', 'Rated 4 by 6% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Quiet,97%,6440
-26,Girl & the Goat,4.8,4.8,4.7,4.5,"['Rated 5 by 87% people', 'Rated 4 by 9% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,95%,10903
-27,Giulia Restaurant,4.8,4.8,4.6,4.4,"['Rated 5 by 84% people', 'Rated 4 by 12% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,94%,1128
-28,Gramercy Tavern,4.8,4.8,4.7,4.3,"['Rated 5 by 88% people', 'Rated 4 by 8% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,93%,8508
-29,"The Grill - The Ritz-Carlton, Naples",4.8,4.9,4.8,4.3,"['Rated 5 by 88% people', 'Rated 4 by 7% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Quiet,96%,1305
+25,Geronimo,4.9,4.9,4.9,4.5,"['Rated 5 by 92% people', 'Rated 4 by 6% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Quiet,97%,6457
+26,Girl & the Goat,4.8,4.8,4.7,4.5,"['Rated 5 by 88% people', 'Rated 4 by 9% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,95%,10903
+27,Giulia Restaurant,4.8,4.8,4.6,4.4,"['Rated 5 by 83% people', 'Rated 4 by 12% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,94%,1131
+28,Gramercy Tavern,4.8,4.8,4.7,4.3,"['Rated 5 by 87% people', 'Rated 4 by 9% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,93%,8508
+29,"The Grill - The Ritz-Carlton, Naples",4.8,4.9,4.8,4.3,"['Rated 5 by 89% people', 'Rated 4 by 7% people', 'Rated 3 by 3% people', 'Rated 2 by 2% people', 'Rated 1 by 0% people']",Moderate,95%,1305
 30,Halls Chophouse,4.8,4.9,4.7,4.5,"['Rated 5 by 87% people', 'Rated 4 by 10% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,98%,10706
-31,Harold Black,4.6,4.5,4.9,4.3,"['Rated 5 by 82% people', 'Rated 4 by 12% people', 'Rated 3 by 5% people', 'Rated 2 by 0% people', 'Rated 1 by 1% people']",Quiet,98%,575
-32,Heirloom Cafe,4.8,4.7,4.7,4.4,"['Rated 5 by 84% people', 'Rated 4 by 11% people', 'Rated 3 by 3% people', 'Rated 2 by 2% people', 'Rated 1 by 0% people']",Moderate,80%,1098
-33,Hersh's,4.9,4.8,4.7,4.6,"['Rated 5 by 88% people', 'Rated 4 by 10% people', 'Rated 3 by 1% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,00%,816
+31,Harold Black,4.6,4.5,4.9,4.3,"['Rated 5 by 81% people', 'Rated 4 by 12% people', 'Rated 3 by 5% people', 'Rated 2 by 0% people', 'Rated 1 by 2% people']",Quiet,98%,575
+32,Heirloom Cafe,4.8,4.8,4.7,4.4,"['Rated 5 by 86% people', 'Rated 4 by 10% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,78%,1098
+33,Hersh's,4.9,4.8,4.7,4.6,"['Rated 5 by 88% people', 'Rated 4 by 10% people', 'Rated 3 by 1% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,00%,819
 34,Highlands Bar & Grill,None,None,None,None,[],None,None,$50
-35,The Inn at Little Washington,4.9,4.9,4.8,4.1,"['Rated 5 by 89% people', 'Rated 4 by 9% people', 'Rated 3 by 3% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Quiet,00%,769
-36,Seafood,4.8,4.8,4.7,4.4,"['Rated 5 by 88% people', 'Rated 4 by 9% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Moderate,97%,13556
-37,JUNGSIK,4.9,4.9,4.8,4.5,"['Rated 5 by 90% people', 'Rated 4 by 8% people', 'Rated 3 by 1% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Quiet,96%,1418
+35,The Inn at Little Washington,4.9,4.9,4.8,4.1,"['Rated 5 by 88% people', 'Rated 4 by 9% people', 'Rated 3 by 3% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Quiet,00%,769
+36,Seafood,4.8,4.8,4.7,4.4,"['Rated 5 by 88% people', 'Rated 4 by 9% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Moderate,98%,13570
+37,JUNGSIK,4.9,4.9,4.8,4.5,"['Rated 5 by 91% people', 'Rated 4 by 8% people', 'Rated 3 by 1% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Quiet,97%,1418
 38,Kinship,4.7,4.7,4.7,4.3,"['Rated 5 by 83% people', 'Rated 4 by 13% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Quiet,93%,927
-39,Koi,4.8,4.7,4.7,4.4,"['Rated 5 by 84% people', 'Rated 4 by 10% people', 'Rated 3 by 4% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,91%,1714
-40,Kokkari Estiatorio,4.8,4.8,4.8,4.3,"['Rated 5 by 86% people', 'Rated 4 by 10% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,94%,6788
-41,L'Auberge Chez Francois,4.9,4.9,4.8,4.5,"['Rated 5 by 90% people', 'Rated 4 by 8% people', 'Rated 3 by 1% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Quiet,98%,6038
-42,La Grotta,4.9,4.8,4.8,4.6,"['Rated 5 by 90% people', 'Rated 4 by 7% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,99%,1709
-43,Lahaina Grill,4.8,4.9,4.7,4.4,"['Rated 5 by 88% people', 'Rated 4 by 8% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,95%,6670
+39,Koi,4.8,4.7,4.7,4.3,"['Rated 5 by 84% people', 'Rated 4 by 10% people', 'Rated 3 by 4% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,91%,1716
+40,Kokkari Estiatorio,4.8,4.8,4.8,4.3,"['Rated 5 by 86% people', 'Rated 4 by 10% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,94%,6788
+41,L'Auberge Chez Francois,4.9,4.9,4.8,4.5,"['Rated 5 by 90% people', 'Rated 4 by 9% people', 'Rated 3 by 1% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Quiet,98%,6059
+42,La Grotta,4.9,4.8,4.8,4.6,"['Rated 5 by 90% people', 'Rated 4 by 7% people', 'Rated 3 by 1% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,00%,1713
+43,Lahaina Grill,4.8,4.9,4.7,4.4,"['Rated 5 by 88% people', 'Rated 4 by 8% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,95%,6671
 44,LArtusi,4.8,4.7,4.7,4.5,"['Rated 5 by 86% people', 'Rated 4 by 10% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,95%,2404
-45,Le Bilboquet - Dallas,4.8,4.8,4.8,4.5,"['Rated 5 by 88% people', 'Rated 4 by 7% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,92%,1281
-46,Le Coucou,4.7,4.7,4.8,4.2,"['Rated 5 by 81% people', 'Rated 4 by 12% people', 'Rated 3 by 4% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,92%,2925
-47,Le Diplomate,4.8,4.7,4.7,4.4,"['Rated 5 by 85% people', 'Rated 4 by 11% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,95%,8808
+45,Le Bilboquet - Dallas,4.8,4.8,4.8,4.5,"['Rated 5 by 88% people', 'Rated 4 by 7% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,93%,1283
+46,Le Coucou,4.7,4.7,4.8,4.2,"['Rated 5 by 82% people', 'Rated 4 by 12% people', 'Rated 3 by 4% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,93%,2925
+47,Le Diplomate,4.8,4.7,4.7,4.4,"['Rated 5 by 85% people', 'Rated 4 by 11% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,95%,8831
 48,Le Vallauris,4.8,4.8,4.8,4.4,"['Rated 5 by 86% people', 'Rated 4 by 10% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Quiet,95%,2767
-49,Linwoods,4.8,4.8,4.7,4.4,"['Rated 5 by 84% people', 'Rated 4 by 12% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,98%,3249
-50,Mama's Fish House,4.9,4.8,4.9,4.3,"['Rated 5 by 91% people', 'Rated 4 by 6% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Moderate,97%,30637
-51,Marc Forgione,4.8,4.8,4.7,4.3,"['Rated 5 by 88% people', 'Rated 4 by 8% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,88%,2809
-52,Marcel's by Robert Wiedmaier,4.9,4.9,4.8,4.4,"['Rated 5 by 87% people', 'Rated 4 by 10% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Quiet,97%,3353
-53,Marea,4.8,4.7,4.7,4.3,"['Rated 5 by 84% people', 'Rated 4 by 11% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,92%,7748
-54,Market Restaurant and Bar,4.9,4.8,4.5,4.4,"['Rated 5 by 86% people', 'Rated 4 by 11% people', 'Rated 3 by 1% people', 'Rated 2 by 0% people', 'Rated 1 by 1% people']",Moderate,98%,3044
-55,Mistral - Sherman Oaks,4.8,4.8,4.7,4.5,"['Rated 5 by 89% people', 'Rated 4 by 7% people', 'Rated 3 by 3% people', 'Rated 2 by 0% people', 'Rated 1 by 1% people']",Moderate,92%,1227
-56,The Modern - Bar Room and Dining Room,4.6,4.7,4.7,4.4,"['Rated 5 by 79% people', 'Rated 4 by 16% people', 'Rated 3 by 4% people', 'Rated 2 by 0% people', 'Rated 1 by 1% people']",Moderate,93%,4318
-57,Momofuku Ko,4.8,4.9,4.8,4.4,"['Rated 5 by 88% people', 'Rated 4 by 8% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,91%,650
-58,Neighborhood Services,4.8,4.8,4.7,4.5,"['Rated 5 by 88% people', 'Rated 4 by 9% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,91%,1282
-59,Orchids at Palm Court,4.7,4.8,4.9,4.3,"['Rated 5 by 83% people', 'Rated 4 by 11% people', 'Rated 3 by 3% people', 'Rated 2 by 2% people', 'Rated 1 by 1% people']",Moderate,95%,2509
-60,Oriole,4.9,5.0,4.9,4.5,"['Rated 5 by 96% people', 'Rated 4 by 2% people', 'Rated 3 by 1% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Quiet,97%,1132
-61,Parc,4.7,4.7,4.7,4.4,"['Rated 5 by 81% people', 'Rated 4 by 15% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,96%,11178
+49,Linwoods,4.8,4.8,4.7,4.4,"['Rated 5 by 84% people', 'Rated 4 by 12% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,98%,3256
+50,Mama's Fish House,4.9,4.9,4.9,4.3,"['Rated 5 by 91% people', 'Rated 4 by 6% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Moderate,97%,30638
+51,Marc Forgione,4.8,4.8,4.7,4.3,"['Rated 5 by 88% people', 'Rated 4 by 8% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,87%,2809
+52,Marcel's by Robert Wiedmaier,4.9,4.9,4.8,4.4,"['Rated 5 by 87% people', 'Rated 4 by 10% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Quiet,96%,3353
+53,Marea,4.8,4.7,4.7,4.3,"['Rated 5 by 85% people', 'Rated 4 by 10% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,93%,7748
+54,Market Restaurant and Bar,4.9,4.8,4.5,4.4,"['Rated 5 by 86% people', 'Rated 4 by 12% people', 'Rated 3 by 1% people', 'Rated 2 by 0% people', 'Rated 1 by 1% people']",Moderate,98%,3044
+55,Mistral - Sherman Oaks,4.8,4.9,4.7,4.5,"['Rated 5 by 89% people', 'Rated 4 by 7% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,93%,1229
+56,The Modern - Bar Room and Dining Room,4.6,4.7,4.7,4.4,"['Rated 5 by 80% people', 'Rated 4 by 15% people', 'Rated 3 by 4% people', 'Rated 2 by 0% people', 'Rated 1 by 2% people']",Moderate,93%,4318
+57,Momofuku Ko,4.8,4.9,4.8,4.4,"['Rated 5 by 87% people', 'Rated 4 by 8% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,90%,650
+58,Neighborhood Services,4.8,4.8,4.7,4.5,"['Rated 5 by 88% people', 'Rated 4 by 9% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,92%,1286
+59,Orchids at Palm Court,4.7,4.8,4.9,4.3,"['Rated 5 by 83% people', 'Rated 4 by 12% people', 'Rated 3 by 3% people', 'Rated 2 by 2% people', 'Rated 1 by 1% people']",Moderate,94%,2509
+60,Oriole,4.9,5.0,4.9,4.5,"['Rated 5 by 96% people', 'Rated 4 by 2% people', 'Rated 3 by 1% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Quiet,98%,1132
+61,Parc,4.7,4.7,4.7,4.4,"['Rated 5 by 81% people', 'Rated 4 by 15% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,96%,11194
 62,Per Se,4.8,4.8,4.8,4.3,"['Rated 5 by 85% people', 'Rated 4 by 10% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Quiet,94%,2187
-63,The Polo Bar,4.7,4.8,4.8,4.3,"['Rated 5 by 86% people', 'Rated 4 by 10% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,93%,699
-64,Polo Lounge @ The Beverly Hills Hotel,4.6,4.6,4.8,4.0,"['Rated 5 by 83% people', 'Rated 4 by 9% people', 'Rated 3 by 5% people', 'Rated 2 by 2% people', 'Rated 1 by 1% people']",Moderate,93%,1360
-65,PRESS,4.6,4.7,4.7,4.1,"['Rated 5 by 78% people', 'Rated 4 by 11% people', 'Rated 3 by 6% people', 'Rated 2 by 3% people', 'Rated 1 by 1% people']",Moderate,82%,2533
-66,Quince,4.8,4.9,4.9,4.3,"['Rated 5 by 90% people', 'Rated 4 by 5% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Quiet,86%,2577
-67,Raoul's,4.8,4.6,4.7,4.3,"['Rated 5 by 84% people', 'Rated 4 by 13% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Moderate,92%,1838
-68,Rasika,None,None,None,None,"['Rated 5 by 78% people', 'Rated 4 by 15% people', 'Rated 3 by 2% people', 'Rated 2 by 3% people', 'Rated 1 by 3% people']",None,None,8652
+63,The Polo Bar,4.7,4.8,4.8,4.3,"['Rated 5 by 86% people', 'Rated 4 by 10% people', 'Rated 3 by 2% people', 'Rated 2 by 2% people', 'Rated 1 by 1% people']",Moderate,93%,699
+64,Polo Lounge @ The Beverly Hills Hotel,4.6,4.6,4.8,4.0,"['Rated 5 by 83% people', 'Rated 4 by 9% people', 'Rated 3 by 5% people', 'Rated 2 by 2% people', 'Rated 1 by 1% people']",Moderate,92%,1365
+65,PRESS,4.6,4.7,4.7,4.1,"['Rated 5 by 79% people', 'Rated 4 by 11% people', 'Rated 3 by 6% people', 'Rated 2 by 3% people', 'Rated 1 by 1% people']",Moderate,83%,2540
+66,Quince,4.8,4.9,4.9,4.3,"['Rated 5 by 89% people', 'Rated 4 by 5% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Quiet,86%,2577
+67,Raoul's,4.8,4.6,4.7,4.3,"['Rated 5 by 84% people', 'Rated 4 by 13% people', 'Rated 3 by 3% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Moderate,90%,1838
+68,Rasika,None,None,None,None,"['Rated 5 by 77% people', 'Rated 4 by 15% people', 'Rated 3 by 2% people', 'Rated 2 by 3% people', 'Rated 1 by 3% people']",None,None,8652
 69,Restaurant L,4.9,4.8,4.9,4.5,"['Rated 5 by 91% people', 'Rated 4 by 5% people', 'Rated 3 by 2% people', 'Rated 2 by 2% people', 'Rated 1 by 0% people']",Quiet,97%,787
-70,Riccardo Enoteca,4.9,4.9,4.8,4.7,"['Rated 5 by 91% people', 'Rated 4 by 9% people', 'Rated 3 by 1% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Quiet,00%,604
-71,Rich Table,None,None,None,None,"['Rated 5 by 91% people', 'Rated 4 by 9% people', 'Rated 3 by 0% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",None,None,1735
-72,RL Restaurant,4.7,4.8,4.8,4.4,"['Rated 5 by 86% people', 'Rated 4 by 9% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,94%,6014
+70,Riccardo Enoteca,4.9,4.9,4.8,4.7,"['Rated 5 by 91% people', 'Rated 4 by 8% people', 'Rated 3 by 1% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Moderate,00%,608
+71,Rich Table,4.6,4.6,4.4,4.3,"['Rated 5 by 76% people', 'Rated 4 by 17% people', 'Rated 3 by 5% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,92%,1735
+72,RL Restaurant,4.8,4.8,4.8,4.4,"['Rated 5 by 86% people', 'Rated 4 by 9% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,94%,6029
 73,RPM Restaurants - Multiple Locations,4.7,4.7,4.7,4.4,"['Rated 5 by 81% people', 'Rated 4 by 12% people', 'Rated 3 by 4% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,93%,11492
-74,Rudy & Paco Restaurant & Bar,4.9,4.9,4.9,4.6,"['Rated 5 by 93% people', 'Rated 4 by 5% people', 'Rated 3 by 1% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Quiet,98%,2967
-75,Ruth's Chris Steak House - Baton Rouge,4.9,4.9,4.8,4.7,"['Rated 5 by 95% people', 'Rated 4 by 4% people', 'Rated 3 by 1% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Moderate,98%,1350
+74,Rudy & Paco Restaurant & Bar,4.9,4.9,4.9,4.6,"['Rated 5 by 93% people', 'Rated 4 by 5% people', 'Rated 3 by 1% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Quiet,98%,2968
+75,Ruth's Chris Steak House - Baton Rouge,4.9,4.9,4.8,4.7,"['Rated 5 by 95% people', 'Rated 4 by 4% people', 'Rated 3 by 1% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Moderate,99%,1355
 76,The Saddle River Inn,4.9,4.8,4.8,4.6,"['Rated 5 by 91% people', 'Rated 4 by 7% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Moderate,98%,1821
-77,Saint Jacques French Cuisine,4.8,4.8,4.5,4.4,"['Rated 5 by 86% people', 'Rated 4 by 8% people', 'Rated 3 by 4% people', 'Rated 2 by 2% people', 'Rated 1 by 1% people']",Quiet,91%,2420
-78,Shinsei Restaurant,4.8,4.7,4.7,4.4,"['Rated 5 by 88% people', 'Rated 4 by 9% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,95%,1111
-79,SHU - Sushi House Unico - Bel Air,4.8,4.7,4.6,4.4,"['Rated 5 by 87% people', 'Rated 4 by 9% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,97%,425
-80,Sotto,4.9,4.9,4.9,4.7,"['Rated 5 by 92% people', 'Rated 4 by 6% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Moderate,98%,4042
-81,Spinasse,4.8,4.8,4.7,4.4,"['Rated 5 by 85% people', 'Rated 4 by 9% people', 'Rated 3 by 4% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,95%,2656
-82,St. Francis Winery & Vineyards,4.9,4.9,4.9,4.8,"['Rated 5 by 92% people', 'Rated 4 by 6% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Quiet,99%,1369
+77,Saint Jacques French Cuisine,4.8,4.8,4.5,4.4,"['Rated 5 by 85% people', 'Rated 4 by 8% people', 'Rated 3 by 4% people', 'Rated 2 by 2% people', 'Rated 1 by 1% people']",Quiet,91%,2421
+78,Shinsei Restaurant,4.8,4.7,4.7,4.4,"['Rated 5 by 88% people', 'Rated 4 by 9% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,94%,1113
+79,SHU - Sushi House Unico - Bel Air,4.8,4.7,4.6,4.4,"['Rated 5 by 87% people', 'Rated 4 by 9% people', 'Rated 3 by 3% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Moderate,97%,425
+80,Sotto,4.9,4.9,4.9,4.7,"['Rated 5 by 93% people', 'Rated 4 by 5% people', 'Rated 3 by 1% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Moderate,98%,4050
+81,Spinasse,4.8,4.8,4.7,4.4,"['Rated 5 by 85% people', 'Rated 4 by 9% people', 'Rated 3 by 4% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,95%,2656
+82,St. Francis Winery & Vineyards,4.9,4.9,4.9,4.8,"['Rated 5 by 92% people', 'Rated 4 by 6% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Quiet,98%,1375
 83,Steve & Cookie's By the Bay,4.9,4.8,4.7,4.5,"['Rated 5 by 87% people', 'Rated 4 by 10% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Moderate,98%,5414
-84,Stonehouse at San Ysidro Ranch,4.7,4.8,4.9,4.3,"['Rated 5 by 89% people', 'Rated 4 by 7% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Quiet,96%,1509
+84,Stonehouse at San Ysidro Ranch,4.7,4.8,4.9,4.3,"['Rated 5 by 88% people', 'Rated 4 by 7% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Quiet,96%,1510
 85,Sushi Nakazawa - Sushi Bar,4.9,4.9,4.8,4.4,"['Rated 5 by 90% people', 'Rated 4 by 7% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Quiet,97%,750
-86,The Table at Season To Taste,4.9,4.9,4.7,4.5,"['Rated 5 by 88% people', 'Rated 4 by 9% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Quiet,95%,794
-87,Talula’s Garden,4.8,4.8,4.8,4.4,"['Rated 5 by 84% people', 'Rated 4 by 12% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,96%,8606
-88,The Metro Wine Bar & Bistro,4.9,4.9,4.9,4.7,"['Rated 5 by 94% people', 'Rated 4 by 5% people', 'Rated 3 by 0% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Quiet,99%,1861
-89,Toscana,4.7,4.8,4.5,4.3,"['Rated 5 by 83% people', 'Rated 4 by 13% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,86%,479
+86,The Table at Season To Taste,4.8,4.9,4.7,4.5,"['Rated 5 by 88% people', 'Rated 4 by 9% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Quiet,95%,794
+87,Talula’s Garden,4.8,4.8,4.8,4.4,"['Rated 5 by 84% people', 'Rated 4 by 12% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,96%,8615
+88,The Metro Wine Bar & Bistro,4.9,4.9,4.9,4.7,"['Rated 5 by 94% people', 'Rated 4 by 5% people', 'Rated 3 by 0% people', 'Rated 2 by 0% people', 'Rated 1 by 0% people']",Quiet,99%,1864
+89,Toscana,4.7,4.8,4.5,4.2,"['Rated 5 by 83% people', 'Rated 4 by 13% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,86%,479
 90,Townsend,4.6,4.6,4.2,4.1,"['Rated 5 by 68% people', 'Rated 4 by 20% people', 'Rated 3 by 9% people', 'Rated 2 by 2% people', 'Rated 1 by 1% people']",Moderate,89%,1222
-91,True Food Kitchen - Chicago,4.7,4.6,4.6,4.4,"['Rated 5 by 80% people', 'Rated 4 by 15% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,97%,1590
-92,Uchi - Dallas,4.9,4.8,4.8,4.5,"['Rated 5 by 91% people', 'Rated 4 by 6% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,97%,2225
-93,UMI,4.9,4.8,4.7,4.4,"['Rated 5 by 90% people', 'Rated 4 by 7% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,96%,1787
-94,Upland,4.6,4.4,4.6,4.1,"['Rated 5 by 75% people', 'Rated 4 by 16% people', 'Rated 3 by 6% people', 'Rated 2 by 2% people', 'Rated 1 by 1% people']",Moderate,89%,2581
+91,True Food Kitchen - Chicago,4.7,4.6,4.6,4.4,"['Rated 5 by 80% people', 'Rated 4 by 15% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,97%,1598
+92,Uchi - Dallas,4.9,4.8,4.8,4.5,"['Rated 5 by 91% people', 'Rated 4 by 6% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,97%,2235
+93,UMI,4.9,4.8,4.7,4.4,"['Rated 5 by 90% people', 'Rated 4 by 7% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,97%,1790
+94,Upland,4.5,4.4,4.6,4.1,"['Rated 5 by 75% people', 'Rated 4 by 16% people', 'Rated 3 by 6% people', 'Rated 2 by 2% people', 'Rated 1 by 1% people']",Moderate,89%,2581
 95,Vernick Food & Drink,4.8,4.7,4.4,4.4,"['Rated 5 by 80% people', 'Rated 4 by 17% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Moderate,97%,1659
 96,Vetri Cucina,4.9,4.9,4.8,4.4,"['Rated 5 by 92% people', 'Rated 4 by 5% people', 'Rated 3 by 2% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Quiet,94%,2366
-97,Yvonne's,4.7,4.5,4.8,4.2,"['Rated 5 by 79% people', 'Rated 4 by 15% people', 'Rated 3 by 4% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,97%,1175
-98,Zahav,4.8,4.9,4.7,4.7,"['Rated 5 by 91% people', 'Rated 4 by 6% people', 'Rated 3 by 1% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,98%,7136
+97,Yvonne's,4.7,4.6,4.8,4.2,"['Rated 5 by 80% people', 'Rated 4 by 15% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 1% people']",Moderate,97%,1175
+98,Zahav,4.8,4.8,4.7,4.6,"['Rated 5 by 90% people', 'Rated 4 by 7% people', 'Rated 3 by 2% people', 'Rated 2 by 0% people', 'Rated 1 by 1% people']",Moderate,97%,7136
 99,Zero Restaurant + Bar,4.8,4.8,4.8,4.3,"['Rated 5 by 85% people', 'Rated 4 by 11% people', 'Rated 3 by 3% people', 'Rated 2 by 1% people', 'Rated 1 by 0% people']",Quiet,94%,758

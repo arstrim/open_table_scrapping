@@ -1,4 +1,3 @@
-# pip install PyMySQL #TODO requirementx.txt
 import pymysql.cursors
 import pandas as pd
 import logging
@@ -17,6 +16,7 @@ def make_connection():
                                  user='ariela',
                                  password='ariela')
     return connection
+
 
 def make_connection_db():
     """Returns a connection to modify database"""
@@ -51,37 +51,36 @@ def build_db():
     data.fillna(0, inplace=True)
     logging.debug('data.shape:' + str(data.shape))
 
-
     try:
-    #Creates a database
+        # Creates a database
         with connection.cursor() as cur:
-            cur.execute('CREATE DATABASE '+ DB_NAME)
+            cur.execute('CREATE DATABASE ' + DB_NAME)
         connection = make_connection_db()
-        logging.info('Database:'+DB_NAME+' created')
+        logging.info('Database:' + DB_NAME + ' created')
 
     except pymysql.err.ProgrammingError:
-    #If database is there, it connects to it and filters the new data from the DataFrame
+        # If database is there, it connects to it and filters the new data from the DataFrame
         logging.info('Database:' + DB_NAME + ' found')
         connection = make_connection_db()
         with connection.cursor() as cur:
-            cur.execute('''SELECT date FROM reviews WHERE date NOT LIKE 'nan' ORDER BY date DESC LIMIT 1 ''') #TODO fix date dinned vs reviewd
+            cur.execute('''SELECT date FROM reviews WHERE date NOT LIKE 'nan' ORDER BY date DESC LIMIT 1 ''')  # TODO fix date dinned vs reviewd
             result = cur.fetchall()
         last_date = result[0]['date']
         logging.debug('last date on db:' + last_date)
-        new_data = data[data['Date']>last_date]
+        new_data = data[data['Date'] > last_date]
         logging.debug('shape new_data:' + str(new_data.shape))
 
     else:
-    #Creates the tables for the database
+        # Creates the tables for the database
         new_data = data
         with connection.cursor() as cur:
             cur.execute(q.create_table_users)
-            cur.execute(q.create_table_reviews) #TODO missing line check file build_db_queries.py
+            cur.execute(q.create_table_reviews)
+            cur.execute(q.create_table_restaurants)  # TODO missing line check file build_db_queries.py
         logging.info('Created tables')
 
-
     finally:
-    #Updates the database with all new information
+        # Updates the database with all new information
         new_data.reset_index(inplace=True)
         with connection.cursor() as cur:
             for i in range(len(new_data)):
@@ -89,7 +88,7 @@ def build_db():
                 cur.execute(q.return_user_id, {'user':str(new_data.loc[i, 'User']), 'place':str(new_data.loc[i, 'Place'])})
                 result = cur.fetchall()
                 if len(result)>0:
-                    #User is in database
+                    # User is in database
                     user_id = result[0]['id']
                     cur.execute(q.insert_reviews_w_user,
                                 (int(user_id), str(new_data.loc[i, 'Name']), str(comment),
