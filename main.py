@@ -28,7 +28,7 @@ def write_csv(rest_names, rest_links):
     with open('scrap_date.txt', 'w') as f:
         f.write(str(datetime.now()))
 
-    # restaurant_info(rest_links, rest_names)
+    restaurant_info(rest_links, rest_names)
     get_all_reviews(rest_links, rest_names, scrap_date)
 
 
