@@ -3,6 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import os
 from datetime import datetime
+from restaurant_info import restaurant_info
 from get_reviews import get_all_reviews
 from build_db import build_db
 
@@ -11,7 +12,7 @@ LINK = 'https://www.opentable.com/m/best-restaurants-in-america-for-2017/'
 
 def write_csv(rest_names, rest_links):
     """
-    writes file reviews.csv (all reviews from all restaurants).
+    writes file reviews.csv and 100restaurants.csv (all reviews from all restaurants).
     :param rest_names: list of names of all restaurants
     :param rest_links: list of links of all restaurants
     :return: None
@@ -27,7 +28,7 @@ def write_csv(rest_names, rest_links):
     with open('scrap_date.txt', 'w') as f:
         f.write(str(datetime.now()))
 
-    # restaurant_info(rest_links, rest_names)
+    restaurant_info(rest_links, rest_names)
     get_all_reviews(rest_links[:5], rest_names[:5], scrap_date)
 
 

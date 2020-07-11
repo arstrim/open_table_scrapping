@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="346d76b7-98f8-4d66-8543-360f5d0cb58b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/100restaurants.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/build_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build_db_queries.py" beforeDir="false" afterPath="$PROJECT_DIR$/build_db_queries.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_reviews.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_reviews.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reviews.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrap_date.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +135,7 @@
       <workItem from="1594245859354" duration="9216000" />
       <workItem from="1594290729208" duration="1433000" />
       <workItem from="1594372551547" duration="16030000" />
-      <workItem from="1594452464346" duration="24755000" />
+      <workItem from="1594452464346" duration="24793000" />
     </task>
     <servers />
   </component>
