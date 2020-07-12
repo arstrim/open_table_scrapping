@@ -6,6 +6,7 @@ import build_db_queries as q
 
 DB_NAME = 'testing_project'
 FILENAME = 'reviews.csv'
+FILENAME2 = '100restaurants.csv'
 MAX_CHAR = 254
 logging.basicConfig(level=10)
 
@@ -47,6 +48,7 @@ def build_db():
     connection = make_connection()
 
     data = pd.read_csv(FILENAME)
+    data2 = pd.read_csv(FILENAME2)
     data['Dates'].fillna('0', inplace=True)
     data.fillna(0, inplace=True)
     logging.debug('data.shape:' + str(data.shape))
@@ -63,7 +65,8 @@ def build_db():
         logging.info('Database:' + DB_NAME + ' found')
         connection = make_connection_db()
         with connection.cursor() as cur:
-            cur.execute('''SELECT date FROM reviews WHERE date NOT LIKE 'nan' ORDER BY date DESC LIMIT 1 ''')  # TODO fix date dinned vs reviewd
+            cur.execute(
+                '''SELECT date FROM reviews WHERE date NOT LIKE 'nan' ORDER BY date DESC LIMIT 1 ''')  # TODO fix date dinned vs reviewd
             result = cur.fetchall()
         last_date = result[0]['date']
         logging.debug('last date on db:' + last_date)
@@ -73,40 +76,69 @@ def build_db():
     else:
         # Creates the tables for the database
         new_data = data
+        new_data2 = data2
         with connection.cursor() as cur:
             cur.execute(q.create_table_users)
             cur.execute(q.create_table_reviews)
-            # cur.execute(q.create_table_restaurants)  # TODO missing line check file build_db_queries.py
+            cur.execute(q.create_table_restaurants)  # TODO missing line check file build_db_queries.py
         logging.info('Created tables')
 
     finally:
         # Updates the database with all new information
         new_data.reset_index(inplace=True)
+        new_data2.reset_index(inplace=True)
         with connection.cursor() as cur:
             for i in range(len(new_data)):
                 comment = strip_comment(str(new_data.loc[i, 'Comments']))
-                cur.execute(q.return_user_id, {'user':str(new_data.loc[i, 'Users']), 'place':str(new_data.loc[i, 'Place'])})
+                cur.execute(q.return_user_id,
+                            {'user': str(new_data.loc[i, 'Users']), 'place': str(new_data.loc[i, 'Place'])})
                 result = cur.fetchall()
-                if len(result)>0:
+                if len(result) > 0:
                     # User is in database
                     user_id = result[0]['id']
                     cur.execute(q.insert_reviews_w_user,
                                 (int(user_id), str(new_data.loc[i, 'Name']), str(comment),
-                                 int(new_data.loc[i, 'Overall rating']), int(new_data.loc[i, 'Food rating']), int(new_data.loc[i, 'Service rating']),
-                                 int(new_data.loc[i, 'Ambience rating']), str(new_data.loc[i, 'Dates']), int(new_data.loc[i, 'No. of reviews'])))
+                                 int(new_data.loc[i, 'Overall rating']), int(new_data.loc[i, 'Food rating']),
+                                 int(new_data.loc[i, 'Service rating']),
+                                 int(new_data.loc[i, 'Ambience rating']), str(new_data.loc[i, 'Dates']),
+                                 int(new_data.loc[i, 'No. of reviews'])))
                 else:
                     # User is not on the table users
                     cur.execute(q.insert_users,
-                                (str(new_data.loc[i, 'Users']), str(new_data.loc[i, 'Place']), int(new_data.loc[i, 'VIP'])))
+                                (str(new_data.loc[i, 'Users']), str(new_data.loc[i, 'Place']),
+                                 int(new_data.loc[i, 'VIP'])))
 
                     cur.execute(q.insert_reviews_n_user,
-                        (str(new_data.loc[i, 'Name']), str(comment), int(new_data.loc[i, 'Overall rating']),
-                         int(new_data.loc[i, 'Food rating']), int(new_data.loc[i, 'Service rating']), int(new_data.loc[i, 'Ambience rating']),
-                         str(new_data.loc[i, 'Dates']), int(new_data.loc[i, 'No. of reviews'])))
+                                (str(new_data.loc[i, 'Name']), str(comment), int(new_data.loc[i, 'Overall rating']),
+                                 int(new_data.loc[i, 'Food rating']), int(new_data.loc[i, 'Service rating']),
+                                 int(new_data.loc[i, 'Ambience rating']),
+                                 str(new_data.loc[i, 'Dates']), int(new_data.loc[i, 'No. of reviews'])))
+
+            for i in range(len(new_data2)):
+                cur.execute(q.return_rest_name,
+                            {'rest_name': str(new_data2.loc[i, 'Name'])})
+                result = cur.fetchall()
+                if len(result) > 0:
+                    # restaurant is in database
+                    rest_name = result[0]['rest_name']
+                    cur.execute(q.insert_restaurant,
+                                (str(rest_name), str(new_data2.loc[i, 'Location']), str(new_data2.loc[i, 'Cuisine type']),
+                                 int(new_data2.loc[i, 'No. of reviews']), str(new_data2.loc[i, 'Noise']),
+                                 float(new_data2.loc[i, 'Food rating']), float(new_data2.loc[i, 'Service rating']),
+                                 float(new_data2.loc[i, 'Ambience rating']), float(new_data2.loc[i, 'Value rating']),
+                                 str(new_data2.loc[i, 'Rating distribution']), int(new_data2.loc[i, 'Recommendations'])))
+
+                else:
+                    # restaurant is not on the table restaurants
+                    cur.execute(q.insert_n_restaurant,
+                                (str(new_data2.loc[i, 'Name']), str(new_data2.loc[i, 'Location']),
+                                 str(new_data2.loc[i, 'Cuisine type']),
+                                 int(new_data2.loc[i, 'No. of reviews']), str(new_data2.loc[i, 'Noise']),
+                                 float(new_data2.loc[i, 'Food rating']), float(new_data2.loc[i, 'Service rating']),
+                                 float(new_data2.loc[i, 'Ambience rating']), float(new_data2.loc[i, 'Value rating']),
+                                 str(new_data2.loc[i, 'Rating distribution']), int(new_data2.loc[i, 'Recommendations'])))
 
             connection.commit()
 
-    logging.info('Database updated:'+ DB_NAME)
-
-# build_db()
+    logging.info('Database updated:' + DB_NAME)
 

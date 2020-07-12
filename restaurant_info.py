@@ -16,6 +16,8 @@ def restaurant_info(rest_links, restaurants):
     noise_status = []
     recommendations = []
     nums_of_reviews = []
+    cuisine_type = []
+    locations = []
     i = 0
 
     print('Writing 100restaurants.csv')
@@ -64,8 +66,18 @@ def restaurant_info(rest_links, restaurants):
         except:
             nums_of_reviews.append('None')
 
+        try:
+            cuisine_type.append(temp_res.cuisine_type())
+        except:
+            cuisine_type.append('None')
+
+        try:
+            locations.append(temp_res.location())
+        except:
+            locations.append('None')
+
     # Creating data base
-    d = {'Name': restaurants, 'Food rating': food_rating, 'Service rating': service_rating,
+    d = {'Name': restaurants, 'Location': locations,'Cuisine type': cuisine_type, 'Food rating': food_rating, 'Service rating': service_rating,
          'Ambience rating': ambience_rating, 'Value rating': value_rating,
          'Rating distribution': rating_distributions, 'Noise': noise_status, 'Recommendations': recommendations,
          'No. of reviews': nums_of_reviews}

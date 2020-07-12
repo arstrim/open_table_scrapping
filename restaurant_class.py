@@ -1,10 +1,8 @@
-import re 
+import re
 import requests
 from bs4 import BeautifulSoup
 
-
 LINK = 'https://www.opentable.com/m/best-restaurants-in-america-for-2017/'
-
 
 
 # Creating Restaurant class and collecting features for each Restaurant object
@@ -26,6 +24,7 @@ class Restaurant:
 
     def rating_distribution(self):
         out = re.findall('Rated [1-5] by [\d]+% people', str(self.soup_rest.find('div', class_='oc-reviews-4cf41aa6')))
+        out = ",".join(out)
         return out
 
     def noise(self):
@@ -41,3 +40,11 @@ class Restaurant:
         out = (summary[1].text).split()[0]
         return out
 
+    def cuisine_type(self):
+        summary = self.soup_rest.find('div', class_='d3ba82e4').find_all('div', class_='c3981cf8 _965a91d5')
+        out = summary[3].text
+        return out
+
+    def location(self):
+        out = self.soup_rest.find('a', class_='_3ddfcf5c _5c8483c8').find('span').text
+        return out

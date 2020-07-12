@@ -1,24 +1,19 @@
 create_table_restaurants = '''CREATE TABLE restaurants (
                     id INT AUTO_INCREMENT PRIMARY KEY,
-                    name VARCHAR(50),
+                    rest_name VARCHAR(50),
+                    location VARCHAR(50),
+                    cuisine_type VARCHAR(50),
                     nb_reviews INT,
-                    noise VARCHAR 
-                    recommendations VARCHAR 
+                    noise VARCHAR(50),
+                    food_rating FLOAT,
+                    service_rating FLOAT,
+                    ambience_rating FLOAT,
+                    value_rating FLOAT,
+                    rating_distribution LONGTEXT,
+                    recommendations VARCHAR(50)
                     )'''
 
-create_table_restaurants_ratings = '''CREATE TABLE restaurants (
-                    rest_id INT,
-                    nb_reviews INT,
-                    food_rating DOUBLE,
-                    service_rating DOUBLE ,
-                    ambience_rating DOUBLE ,
-                    value_rating DOUBLE,
-                    rated_5 VARCHAR,
-                    rated_4 VARCHAR,
-                    rated_3 VARCHAR,
-                    rated_2 VARCHAR, 
-                    rated_1 VARCHAR 
-                    )'''
+
 
 create_table_users = '''CREATE TABLE users (
                     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -54,7 +49,21 @@ insert_reviews_w_user = '''INSERT INTO reviews
                                     service, ambience, date, n_rev)
                                     VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)'''
 
+insert_restaurant = '''INSERT INTO restaurants
+                                    (rest_name, location, cuisine_type, nb_reviews, noise,
+                                    food_rating, service_rating, ambience_rating, value_rating, 
+                                    rating_distribution, recommendations)
+                                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)'''
+
 insert_reviews_n_user = '''INSERT INTO reviews
                         (user_id, restaurant, comment, overall, food, service, ambience, date, n_rev)
                         VALUES (LAST_INSERT_ID(), %s, %s, %s, %s, %s, %s, %s, %s)'''
+
+insert_n_restaurant = '''INSERT INTO restaurants
+                                    (rest_name, location, cuisine_type, nb_reviews, noise,
+                                    food_rating, service_rating, ambience_rating, value_rating, 
+                                    rating_distribution, recommendations)
+                                    VALUES (LAST_INSERT_ID(), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)'''
+
+return_rest_name = 'SELECT rest_name FROM restaurants WHERE rest_name = %(rest_name)'
 
