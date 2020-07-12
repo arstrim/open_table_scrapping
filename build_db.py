@@ -47,7 +47,7 @@ def build_db():
     connection = make_connection()
 
     data = pd.read_csv(FILENAME)
-    data['Date'].fillna('0', inplace=True)
+    data['Dates'].fillna('0', inplace=True)
     data.fillna(0, inplace=True)
     logging.debug('data.shape:' + str(data.shape))
 
@@ -67,7 +67,7 @@ def build_db():
             result = cur.fetchall()
         last_date = result[0]['date']
         logging.debug('last date on db:' + last_date)
-        new_data = data[data['Date'] > last_date]
+        new_data = data[data['Dates'] > last_date]
         logging.debug('shape new_data:' + str(new_data.shape))
 
     else:
@@ -76,7 +76,7 @@ def build_db():
         with connection.cursor() as cur:
             cur.execute(q.create_table_users)
             cur.execute(q.create_table_reviews)
-            cur.execute(q.create_table_restaurants)  # TODO missing line check file build_db_queries.py
+            # cur.execute(q.create_table_restaurants)  # TODO missing line check file build_db_queries.py
         logging.info('Created tables')
 
     finally:
@@ -84,25 +84,25 @@ def build_db():
         new_data.reset_index(inplace=True)
         with connection.cursor() as cur:
             for i in range(len(new_data)):
-                comment = strip_comment(str(new_data.loc[i, 'Comment']))
-                cur.execute(q.return_user_id, {'user':str(new_data.loc[i, 'User']), 'place':str(new_data.loc[i, 'Place'])})
+                comment = strip_comment(str(new_data.loc[i, 'Comments']))
+                cur.execute(q.return_user_id, {'user':str(new_data.loc[i, 'Users']), 'place':str(new_data.loc[i, 'Place'])})
                 result = cur.fetchall()
                 if len(result)>0:
                     # User is in database
                     user_id = result[0]['id']
                     cur.execute(q.insert_reviews_w_user,
                                 (int(user_id), str(new_data.loc[i, 'Name']), str(comment),
-                                 int(new_data.loc[i, 'Overall']), int(new_data.loc[i, 'Food']), int(new_data.loc[i, 'Service']),
-                                 int(new_data.loc[i, 'Ambience']), str(new_data.loc[i, 'Date']), int(new_data.loc[i, 'N_rev'])))
+                                 int(new_data.loc[i, 'Overall rating']), int(new_data.loc[i, 'Food rating']), int(new_data.loc[i, 'Service rating']),
+                                 int(new_data.loc[i, 'Ambience rating']), str(new_data.loc[i, 'Dates']), int(new_data.loc[i, 'No. of reviews'])))
                 else:
                     # User is not on the table users
                     cur.execute(q.insert_users,
-                                (str(new_data.loc[i, 'User']), str(new_data.loc[i, 'Place']), int(new_data.loc[i, 'Vip'])))
+                                (str(new_data.loc[i, 'Users']), str(new_data.loc[i, 'Place']), int(new_data.loc[i, 'VIP'])))
 
                     cur.execute(q.insert_reviews_n_user,
-                        (str(new_data.loc[i, 'Name']), str(comment), int(new_data.loc[i, 'Overall']),
-                         int(new_data.loc[i, 'Food']), int(new_data.loc[i, 'Service']), int(new_data.loc[i, 'Ambience']),
-                         str(new_data.loc[i, 'Date']), int(new_data.loc[i, 'N_rev'])))
+                        (str(new_data.loc[i, 'Name']), str(comment), int(new_data.loc[i, 'Overall rating']),
+                         int(new_data.loc[i, 'Food rating']), int(new_data.loc[i, 'Service rating']), int(new_data.loc[i, 'Ambience rating']),
+                         str(new_data.loc[i, 'Dates']), int(new_data.loc[i, 'No. of reviews'])))
 
             connection.commit()
 
