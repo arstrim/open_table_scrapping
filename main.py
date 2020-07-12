@@ -1,11 +1,12 @@
 import argparse
+import os
 import requests
 from bs4 import BeautifulSoup
-import os
 from datetime import datetime
-from restaurant_info import restaurant_info
-from get_reviews import get_all_reviews
-from build_db import build_db
+import sys
+from scrape.get_reviews import get_all_reviews
+from data_base.build_db import build_db
+from scrape.restaurant_info import restaurant_info
 
 LINK = 'https://www.opentable.com/m/best-restaurants-in-america-for-2017/'
 
@@ -17,17 +18,20 @@ def write_csv(rest_names, rest_links):
     :param rest_links: list of links of all restaurants
     :return: None
     """
-    if not os.path.exists("scrap_date.txt"):
+    scrap_file = os.path.join('.','data',"scrap_date.txt")
+    if not os.path.exists(scrap_file):
         old_date = '1900-01-01 00:00:00.000000'
         scrap_date = datetime.strptime(old_date.split('.')[0], "%Y-%m-%d %H:%M:%S")
     else:
-        with open('scrap_date.txt', 'r') as f:
+        with open(scrap_file, 'r') as f:
             text_date = f.readline().split('.')[0]
             scrap_date = datetime.strptime(text_date, "%Y-%m-%d %H:%M:%S")
 
-    with open('scrap_date.txt', 'w') as f:
+    with open(scrap_file, 'w') as f:
         f.write(str(datetime.now()))
 
+    rest_links = rest_links[:2]
+    rest_names = rest_names[:2]
     restaurant_info(rest_links, rest_names)
     get_all_reviews(rest_links, rest_names, scrap_date)
 
@@ -66,7 +70,7 @@ def main():
         write_csv(restaurants, rest_links)
 
     if args.db:
-        # print('database')
+        print('database')
         build_db()
 
 

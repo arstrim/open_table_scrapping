@@ -2,9 +2,11 @@ import pymysql.cursors
 import pandas as pd
 import logging
 import re
-import build_db_queries as q
+import os
+import data_base.build_db_queries as q
 
 DB_NAME = 'testing_project'
+FOLDER = 'data'
 FILENAME = 'reviews.csv'
 FILENAME2 = '100restaurants.csv'
 MAX_CHAR = 254
@@ -41,8 +43,10 @@ def get_data():
     new_data: df of the new reviews data (that is not in the database)
     data2: df of the data of the restaurants
     """
-    data = pd.read_csv(FILENAME)
-    data2 = pd.read_csv(FILENAME2)
+    path = os.path.join(FOLDER,FILENAME)
+    print(path)
+    data = pd.read_csv(os.path.join(FOLDER,FILENAME))
+    data2 = pd.read_csv(os.path.join(FOLDER,FILENAME2))
     data.fillna(0, inplace=True)
     data2.fillna(0, inplace=True)
     data2.replace('None', 0, inplace=True)
@@ -61,7 +65,7 @@ def get_data():
     new_data = data[data['Dates'] > last_date]
     logging.debug('shape new_data:' + str(new_data.shape))
     new_data.reset_index(inplace=True)
-    
+
     return new_data, data2
 
 

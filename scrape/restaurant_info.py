@@ -1,7 +1,9 @@
 # import pandas as pd
-from restaurant_class import Restaurant
+from scrape.restaurant_class import Restaurant
 import pandas as pd
+import os
 
+PATH = os.path.join('data',"100restaurants.csv")
 
 def restaurant_info(rest_links, restaurants):
     """
@@ -83,5 +85,5 @@ def restaurant_info(rest_links, restaurants):
          'No. of reviews': nums_of_reviews}
 
     df = pd.DataFrame(data=d)
-    df.to_csv("100restaurants.csv")
+    df.to_csv(PATH)
 

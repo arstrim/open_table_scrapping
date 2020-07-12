@@ -4,9 +4,10 @@ import re
 from datetime import datetime
 import datetime as today
 import pandas as pd
+import os
 
 MAX_PAGES = 2
-
+PATH = os.path.join('data',"reviews.csv")
 
 def get_date(review, scrap_date):
     """
@@ -113,12 +114,12 @@ def get_reviews(rest_link, rest_name, scrap_date):
         # Finds all the reviews
         reviews = soup_rest.find_all('div', class_='oc-reviews-5a88ccc3')
         for rev in reviews:
-            names.append(rest_name)
             (place, rating, comment, date, vip, user, n_rev) = get_comment_info(rev, scrap_date)
             if all(ele is None for ele in (place, rating, comment, date, vip, user, n_rev)):
                 continue
             # Stores the variables in lists
             else:
+                names.append(rest_name)
                 places.append(place)
                 comments.append(comment)
                 try:
@@ -179,6 +180,5 @@ def get_all_reviews(rest_links, restaurants, scrap_date):
     d = {'Name': all_names, 'Place': all_places, 'Comments': all_comments, 'Overall rating': all_overall,
          'Food rating': all_food, 'Service rating': all_service, 'Ambience rating': all_ambience,
          'Dates': all_dates, "VIP": all_vips, 'Users': all_users, 'No. of reviews': all_n_revs}
-
     df = pd.DataFrame(data=d)
-    df.to_csv("reviews.csv")
+    df.to_csv(PATH)
