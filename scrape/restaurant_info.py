@@ -85,5 +85,11 @@ def restaurant_info(rest_links, restaurants):
          'No. of reviews': nums_of_reviews}
 
     df = pd.DataFrame(data=d)
+
+    # remove any restaurant that has more that 5 none values
+    df.dropna(axis=0, thresh=5, inplace=True)
+    df.reset_index()
+
+
     df.to_csv(PATH)
 
