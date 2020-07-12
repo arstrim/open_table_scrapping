@@ -4,6 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 import sys
+import logging
 from scrape.get_reviews import get_all_reviews
 from data_base.build_db import build_db
 from scrape.restaurant_info import restaurant_info
@@ -27,11 +28,13 @@ def write_csv(rest_names, rest_links):
             text_date = f.readline().split('.')[0]
             scrap_date = datetime.strptime(text_date, "%Y-%m-%d %H:%M:%S")
 
-    with open(scrap_file, 'w') as f:
-        f.write(str(datetime.now()))
+    try:
+        with open(scrap_file, 'w') as f:
+            f.write(str(datetime.now()))
+    except FileNotFoundError:
+        logging.error('File not found: ' + scrap_file)
+        sys.exit()
 
-    rest_links = rest_links[:2]
-    rest_names = rest_names[:2]
     restaurant_info(rest_links, rest_names)
     get_all_reviews(rest_links, rest_names, scrap_date)
 

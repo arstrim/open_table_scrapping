@@ -3,6 +3,7 @@ import pandas as pd
 import logging
 import re
 import os
+import sys
 import data_base.build_db_queries as q
 
 DB_NAME = 'testing_project'
@@ -12,7 +13,7 @@ FILENAME2 = '100restaurants.csv'
 MAX_CHAR = 254
 USER = 'ariela'
 PASSWORD = 'ariela'
-logging.basicConfig(level=10)
+logging.basicConfig(level=20)
 
 
 def make_connection():
@@ -43,13 +44,21 @@ def get_data():
     new_data: df of the new reviews data (that is not in the database)
     data2: df of the data of the restaurants
     """
-    path = os.path.join(FOLDER,FILENAME)
-    print(path)
-    data = pd.read_csv(os.path.join(FOLDER,FILENAME))
-    data2 = pd.read_csv(os.path.join(FOLDER,FILENAME2))
+    # path = os.path.join(FOLDER,FILENAME)
+    try:
+        data = pd.read_csv(os.path.join(FOLDER,FILENAME))
+    except FileNotFoundError:
+        logging.error('File not found: ' + os.path.join(FOLDER,FILENAME))
+        sys.exit()
+    try:
+        data2 = pd.read_csv(os.path.join(FOLDER,FILENAME2))
+    except FileNotFoundError:
+        logging.error('File not found ' + os.path.join(FOLDER,FILENAME2))
+        sys.exit()
     data.fillna(0, inplace=True)
     data2.fillna(0, inplace=True)
     data2.replace('None', 0, inplace=True)
+    data2 = data2[data2['Name'] != 'Highlands Bar & Grill']
     data2.reset_index(inplace=True)
     logging.debug('data.shape:' + str(data.shape))
 
