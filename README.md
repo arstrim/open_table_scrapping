@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ```
 ---
 Notes:
-When scrapping from scratch,please delete all content of the folder data. Do not delete the folder data
+When scrapping from scratch,please delete all content of the folder data. Do not delete the folder data. <br>
 Future work: check if the path exists of every folder in the project
 
 ## Contributing
