@@ -21,6 +21,7 @@ def write_csv(rest_names, rest_links):
     """
     scrap_file = os.path.join('.','data',"scrap_date.txt")
     if not os.path.exists(scrap_file):
+        os.mkdir('data')
         old_date = '1900-01-01 00:00:00.000000'
         scrap_date = datetime.strptime(old_date.split('.')[0], "%Y-%m-%d %H:%M:%S")
     else:
@@ -62,19 +63,19 @@ def main():
     Takes the arguments in the terminal and executes the function specified
     """
     parser = argparse.ArgumentParser()
-    parser.add_argument('-w', '-write', action='store_true')
-    parser.add_argument('-db', '-database', action='store_true')
+    parser.add_argument('-w', '-write', action='store_true', help='write csv')
+    parser.add_argument('-db', '-database',  type=str, nargs = 2, metavar=('user', 'password'), help='build/update database')
     args = parser.parse_args()
 
     if args.w:
-        print("writting csv")
+        logging.info("writting csv")
         (rest_links, restaurants) = get_links_and_names()
         # write csv files
         write_csv(restaurants, rest_links)
 
     if args.db:
-        print('database')
-        build_db()
+        logging.info('building/updating database')
+        build_db(args.db[0], args.db[1])
 
 
 if __name__ == '__main__':
