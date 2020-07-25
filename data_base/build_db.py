@@ -11,8 +11,6 @@ FOLDER = 'data'
 FILENAME = 'reviews.csv'
 FILENAME2 = '100restaurants.csv'
 MAX_CHAR = 254
-# USER = 'ariela'
-# PASSWORD = 'ariela'
 logging.basicConfig(level=20)
 
 

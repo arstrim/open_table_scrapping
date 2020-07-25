@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="346d76b7-98f8-4d66-8543-360f5d0cb58b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/weather_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/weather_api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/100restaurants.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/100restaurants.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/reviews.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/reviews.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/scrap_date.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/scrap_date.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_base/build_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_base/build_db.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scrape/restaurant_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrape/restaurant_class.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scrape/restaurant_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrape/restaurant_info.py" afterDir="false" />
@@ -150,7 +147,7 @@
       <workItem from="1594533698149" duration="4000" />
       <workItem from="1594533727986" duration="14000" />
       <workItem from="1594533743113" duration="13542000" />
-      <workItem from="1595663630801" duration="3611000" />
+      <workItem from="1595663630801" duration="12690000" />
     </task>
     <servers />
   </component>
@@ -189,6 +186,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/project1$main.coverage" NAME="main Coverage Results" MODIFIED="1594551529910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mining$main.coverage" NAME="main Coverage Results" MODIFIED="1595664344484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mining$main.coverage" NAME="main Coverage Results" MODIFIED="1595691297161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

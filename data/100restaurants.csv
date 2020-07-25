@@ -1,98 +1,98 @@
 ,Name,Location,Cuisine type,Food rating,Service rating,Ambience rating,Value rating,Rating distribution,Noise,Recommendations,No. of reviews
-0,1770 House,"East Hampton, NY",American,4.7,4.8,4.7,4.2,"Rated 5 by 81% people,Rated 4 by 15% people,Rated 3 by 3% people,Rated 2 by 0% people,Rated 1 by 1% people",Quiet,92%,1035
-1,Arethusa al Tavolo,"Bantam, CT",Contemporary American,4.9,4.9,4.7,4.5,"Rated 5 by 92% people,Rated 4 by 7% people,Rated 3 by 1% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,98%,1989
-2,Atera,"New York, NY",Contemporary American,4.9,4.9,4.9,4.5,"Rated 5 by 96% people,Rated 4 by 2% people,Rated 3 by 1% people,Rated 2 by 0% people,Rated 1 by 0% people",Quiet,99%,822
-3,Barclay Prime,"Philadelphia, PA",Steakhouse,4.8,4.8,4.8,4.3,"Rated 5 by 89% people,Rated 4 by 7% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,95%,3483
-4,Barrique Venice,"Venice, CA",Italian,4.8,4.8,4.8,4.4,"Rated 5 by 87% people,Rated 4 by 10% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,97%,494
+0,1770 House,"143 Main Street East Hampton, NY  11937",American,4.7,4.8,4.7,4.2,"Rated 5 by 81% people,Rated 4 by 15% people,Rated 3 by 3% people,Rated 2 by 0% people,Rated 1 by 1% people",Quiet,92%,1035
+1,Arethusa al Tavolo,"828 Bantam Road Bantam, CT  06750",Contemporary American,4.9,4.9,4.7,4.5,"Rated 5 by 92% people,Rated 4 by 7% people,Rated 3 by 1% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,98%,1989
+2,Atera,"77 Worth St. New York, NY  10013",Contemporary American,4.9,4.9,4.9,4.5,"Rated 5 by 96% people,Rated 4 by 2% people,Rated 3 by 1% people,Rated 2 by 0% people,Rated 1 by 0% people",Quiet,99%,822
+3,Barclay Prime,"237 South 18th Street Philadelphia, PA  19103",Steakhouse,4.8,4.8,4.8,4.3,"Rated 5 by 89% people,Rated 4 by 7% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,95%,3483
+4,Barrique Venice,"796 Main St Venice, CA  90291",Italian,4.8,4.8,4.8,4.4,"Rated 5 by 87% people,Rated 4 by 10% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,97%,494
 5,Bavette's,"Chicago, IL",Steakhouse,4.7,4.6,4.7,4.3,"Rated 5 by 81% people,Rated 4 by 15% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,96%,2756
 6,Benu,"San Francisco, CA",Contemporary American,4.9,4.9,4.7,4.4,"Rated 5 by 93% people,Rated 4 by 4% people,Rated 3 by 2% people,Rated 2 by 0% people,Rated 1 by 0% people",Quiet,96%,1607
-7,Bida Manda Restaurant and Bar,"Raleigh, NC",Asian,4.8,4.8,4.7,4.6,"Rated 5 by 88% people,Rated 4 by 9% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,96%,2959
-8,Bones,"Atlanta, GA",Steak,4.8,4.9,4.8,4.5,"Rated 5 by 90% people,Rated 4 by 7% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,96%,7877
-9,BONDST,"New York, NY",Japanese,4.8,4.6,4.6,4.2,"Rated 5 by 86% people,Rated 4 by 9% people,Rated 3 by 4% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,93%,1981
-10,Buccan,"Palm Beach, FL",Contemporary American,4.9,4.8,4.7,4.5,"Rated 5 by 90% people,Rated 4 by 7% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,96%,2487
-11,Café Monarch,"Scottsdale, AZ",Contemporary American,4.9,4.9,4.9,4.5,"Rated 5 by 94% people,Rated 4 by 5% people,Rated 3 by 2% people,Rated 2 by 0% people,Rated 1 by 0% people",Quiet,98%,4024
-12,Cafe Provence,"Prairie Village, KS",French American,4.9,4.9,4.8,4.7,"Rated 5 by 94% people,Rated 4 by 5% people,Rated 3 by 0% people,Rated 2 by 0% people,Rated 1 by 0% people",Quiet,99%,2618
+7,Bida Manda Restaurant and Bar,"222 S. Blount St. Raleigh, NC  27601",Asian,4.8,4.8,4.7,4.6,"Rated 5 by 88% people,Rated 4 by 9% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,96%,2959
+8,Bones,"3130 Piedmont Road Atlanta, GA  30305",Steak,4.8,4.9,4.8,4.5,"Rated 5 by 90% people,Rated 4 by 7% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,96%,7877
+9,BONDST,"6 Bond Street New York, NY  10012",Japanese,4.8,4.6,4.6,4.2,"Rated 5 by 86% people,Rated 4 by 9% people,Rated 3 by 4% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,93%,1981
+10,Buccan,"350 South County Road Palm Beach, FL  33480",Contemporary American,4.9,4.8,4.7,4.5,"Rated 5 by 90% people,Rated 4 by 7% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,96%,2487
+11,Café Monarch,"6939 E 1st Avenue Scottsdale, AZ  85251",Contemporary American,4.9,4.9,4.9,4.5,"Rated 5 by 94% people,Rated 4 by 5% people,Rated 3 by 2% people,Rated 2 by 0% people,Rated 1 by 0% people",Quiet,98%,4024
+12,Cafe Provence,"3936 W 69th Terr. Prairie Village, KS  66208",French American,4.9,4.9,4.8,4.7,"Rated 5 by 94% people,Rated 4 by 5% people,Rated 3 by 0% people,Rated 2 by 0% people,Rated 1 by 0% people",Quiet,99%,2618
 13,Charleston,"Baltimore, MD",American,None,None,None,None,"Rated 5 by 96% people,Rated 4 by 4% people,Rated 3 by 0% people,Rated 2 by 0% people,Rated 1 by 0% people",None,None,3662
 14,Charleston Grill,"Charleston, SC",American,4.8,4.9,4.8,4.5,"Rated 5 by 91% people,Rated 4 by 7% people,Rated 3 by 1% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,97%,4491
-15,Chez Billy Sud,"Washington, DC",French,4.8,4.8,4.8,4.5,"Rated 5 by 86% people,Rated 4 by 11% people,Rated 3 by 2% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,98%,1938
-16,chi SPACCA,"Los Angeles, CA",Italian,4.8,4.7,4.6,4.2,"Rated 5 by 83% people,Rated 4 by 10% people,Rated 3 by 5% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,93%,732
-17,Coppa,"Boston, MA",Italian,4.8,4.7,4.6,4.4,"Rated 5 by 84% people,Rated 4 by 11% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,95%,758
-18,CRUST,"Miami, FL",Italian,4.8,4.8,4.6,4.7,"Rated 5 by 87% people,Rated 4 by 8% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,96%,2073
-19,Daniel,"New York, NY",French,4.8,4.9,4.8,4.4,"Rated 5 by 87% people,Rated 4 by 9% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Quiet,94%,5982
+15,Chez Billy Sud,"1039 31st St NW Washington, DC  20007",French,4.8,4.8,4.8,4.5,"Rated 5 by 86% people,Rated 4 by 11% people,Rated 3 by 2% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,98%,1938
+16,chi SPACCA,"6610 Melrose Ave. Los Angeles, CA  90038",Italian,4.8,4.7,4.6,4.2,"Rated 5 by 83% people,Rated 4 by 10% people,Rated 3 by 5% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,93%,732
+17,Coppa,"253 Shawmut Avenue Boston, MA  02118",Italian,4.8,4.7,4.6,4.4,"Rated 5 by 84% people,Rated 4 by 11% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,95%,758
+18,CRUST,"668 NW 5th St. Miami, FL  33128",Italian,4.8,4.8,4.6,4.7,"Rated 5 by 87% people,Rated 4 by 8% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,96%,2073
+19,Daniel,"60 East 65th St. New York, NY  10065",French,4.8,4.9,4.8,4.4,"Rated 5 by 87% people,Rated 4 by 9% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Quiet,94%,5982
 20,Del Posto,"New York, NY",Italian,4.6,4.7,4.8,4.1,"Rated 5 by 80% people,Rated 4 by 11% people,Rated 3 by 5% people,Rated 2 by 3% people,Rated 1 by 2% people",Quiet,84%,6862
-21,Double Knot,"Philadelphia, PA",Sushi,4.8,4.8,4.8,4.5,"Rated 5 by 88% people,Rated 4 by 9% people,Rated 3 by 2% people,Rated 2 by 0% people,Rated 1 by 1% people",Moderate,96%,2331
-22,Fishing With Dynamite,"Manhattan Beach, CA",Seafood,4.9,4.8,4.7,4.5,"Rated 5 by 90% people,Rated 4 by 8% people,Rated 3 by 1% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,96%,1497
-23,Frances,"San Francisco, CA",Californian,4.8,4.8,4.6,4.4,"Rated 5 by 87% people,Rated 4 by 9% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,95%,3218
-24,Gabriel Kreuther,"New York, NY",Contemporary French / American,4.7,4.7,4.7,4.2,"Rated 5 by 83% people,Rated 4 by 10% people,Rated 3 by 4% people,Rated 2 by 1% people,Rated 1 by 1% people",Quiet,91%,1593
-25,Geronimo,"Santa Fe, NM",Fusion / Eclectic,4.9,4.9,4.9,4.5,"Rated 5 by 92% people,Rated 4 by 6% people,Rated 3 by 2% people,Rated 2 by 0% people,Rated 1 by 0% people",Quiet,97%,6478
-26,Girl & the Goat,"Chicago, IL",Contemporary American,4.8,4.8,4.7,4.5,"Rated 5 by 87% people,Rated 4 by 9% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,95%,10928
-27,Giulia Restaurant,"Cambridge, MA",Italian,4.8,4.8,4.6,4.4,"Rated 5 by 83% people,Rated 4 by 12% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,95%,1139
+21,Double Knot,"120 South 13th St. Philadelphia, PA  19107",Sushi,4.8,4.8,4.8,4.5,"Rated 5 by 88% people,Rated 4 by 9% people,Rated 3 by 2% people,Rated 2 by 0% people,Rated 1 by 1% people",Moderate,96%,2331
+22,Fishing With Dynamite,"1148 Manhattan Avenue Manhattan Beach, CA  90266",Seafood,4.9,4.8,4.7,4.5,"Rated 5 by 90% people,Rated 4 by 8% people,Rated 3 by 1% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,96%,1497
+23,Frances,"3870 17th Street San Francisco, CA  94114",Californian,4.8,4.8,4.6,4.4,"Rated 5 by 87% people,Rated 4 by 9% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,95%,3218
+24,Gabriel Kreuther,"41 W. 42nd St. New York, NY  10036",Contemporary French / American,4.7,4.7,4.7,4.2,"Rated 5 by 83% people,Rated 4 by 10% people,Rated 3 by 4% people,Rated 2 by 1% people,Rated 1 by 1% people",Quiet,91%,1593
+25,Geronimo,"724 Canyon Road Santa Fe, NM  87501",Fusion / Eclectic,4.9,4.9,4.9,4.5,"Rated 5 by 92% people,Rated 4 by 6% people,Rated 3 by 2% people,Rated 2 by 0% people,Rated 1 by 0% people",Quiet,97%,6478
+26,Girl & the Goat,"809 W Randolph Chicago, IL  60607",Contemporary American,4.8,4.8,4.7,4.5,"Rated 5 by 87% people,Rated 4 by 9% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,95%,10928
+27,Giulia Restaurant,"1682 Massachusetts Ave Cambridge, MA  02138",Italian,4.8,4.8,4.6,4.4,"Rated 5 by 83% people,Rated 4 by 12% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,95%,1140
 28,Gramercy Tavern,"New York, NY",American,4.7,4.8,4.7,4.2,"Rated 5 by 86% people,Rated 4 by 8% people,Rated 3 by 4% people,Rated 2 by 2% people,Rated 1 by 0% people",Moderate,92%,8508
-29,"The Grill - The Ritz-Carlton, Naples","Naples, FL",Steakhouse,4.8,4.9,4.8,4.2,"Rated 5 by 89% people,Rated 4 by 6% people,Rated 3 by 3% people,Rated 2 by 2% people,Rated 1 by 0% people",Moderate,95%,1305
+29,"The Grill - The Ritz-Carlton, Naples","280 Vanderbilt Beach Road Naples, FL  34108",Steakhouse,4.8,4.9,4.8,4.2,"Rated 5 by 89% people,Rated 4 by 6% people,Rated 3 by 3% people,Rated 2 by 2% people,Rated 1 by 0% people",Moderate,95%,1305
 30,Halls Chophouse,"Charleston, SC",Steakhouse,4.8,4.9,4.7,4.5,"Rated 5 by 87% people,Rated 4 by 10% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,98%,10706
-31,Harold Black,"Washington, DC",American,4.6,4.5,4.9,4.3,"Rated 5 by 81% people,Rated 4 by 12% people,Rated 3 by 5% people,Rated 2 by 0% people,Rated 1 by 2% people",Quiet,97%,575
+31,Harold Black,"212 7th St SE Washington, DC  20003",American,4.6,4.5,4.9,4.3,"Rated 5 by 81% people,Rated 4 by 12% people,Rated 3 by 5% people,Rated 2 by 0% people,Rated 1 by 2% people",Quiet,97%,575
 32,Heirloom Cafe,"San Francisco, CA",Californian,4.8,4.8,4.7,4.4,"Rated 5 by 81% people,Rated 4 by 14% people,Rated 3 by 4% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,79%,1098
-33,Hersh's,"Baltimore, MD",Italian,4.9,4.8,4.7,4.6,"Rated 5 by 89% people,Rated 4 by 10% people,Rated 3 by 1% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,00%,825
+33,Hersh's,"1843 Light Street Baltimore, MD  21230",Italian,4.9,4.8,4.7,4.6,"Rated 5 by 89% people,Rated 4 by 10% people,Rated 3 by 1% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,00%,825
 34,Highlands Bar & Grill,"Birmingham, AL",None,None,None,None,None,,None,None,$50
 35,The Inn at Little Washington,"Washington, VA",American,4.9,4.9,4.8,4.0,"Rated 5 by 87% people,Rated 4 by 10% people,Rated 3 by 3% people,Rated 2 by 0% people,Rated 1 by 0% people",Quiet,00%,769
-36,Seafood,,Seafood,4.9,4.8,4.7,4.4,"Rated 5 by 89% people,Rated 4 by 9% people,Rated 3 by 2% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,98%,13600
+36,Seafood,"60 East Grand Avenue Chicago, IL  60611",Seafood,4.9,4.8,4.7,4.4,"Rated 5 by 89% people,Rated 4 by 9% people,Rated 3 by 2% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,98%,13600
 37,JUNGSIK,"New York, NY",Korean,4.9,4.9,4.8,4.5,"Rated 5 by 91% people,Rated 4 by 8% people,Rated 3 by 1% people,Rated 2 by 0% people,Rated 1 by 0% people",Quiet,97%,1418
 38,Kinship,"Washington, DC",American,4.7,4.7,4.7,4.3,"Rated 5 by 83% people,Rated 4 by 13% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Quiet,93%,927
-39,Koi,"West Hollywood, CA",Japanese,4.8,4.7,4.7,4.4,"Rated 5 by 84% people,Rated 4 by 10% people,Rated 3 by 4% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,94%,1720
-40,Kokkari Estiatorio,"San Francisco, CA",Mediterranean,4.8,4.8,4.8,4.3,"Rated 5 by 87% people,Rated 4 by 10% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,94%,6788
-41,L'Auberge Chez Francois,"Great Falls, VA",French,4.9,4.9,4.8,4.5,"Rated 5 by 90% people,Rated 4 by 9% people,Rated 3 by 1% people,Rated 2 by 0% people,Rated 1 by 0% people",Quiet,98%,6097
-42,La Grotta,"Atlanta, GA",Italian,4.9,4.8,4.8,4.6,"Rated 5 by 90% people,Rated 4 by 7% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,00%,1724
-43,Lahaina Grill,"Lahaina, HI",American,4.8,4.9,4.7,4.3,"Rated 5 by 88% people,Rated 4 by 9% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,94%,6671
+39,Koi,"730 N La Cienega Blvd Los Angeles, CA  90069",Japanese,4.8,4.7,4.7,4.4,"Rated 5 by 84% people,Rated 4 by 10% people,Rated 3 by 4% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,94%,1720
+40,Kokkari Estiatorio,"200 Jackson St. San Francisco, CA  94111",Mediterranean,4.8,4.8,4.8,4.3,"Rated 5 by 87% people,Rated 4 by 10% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,94%,6788
+41,L'Auberge Chez Francois,"332 Springvale Road Great Falls, VA  22066",French,4.9,4.9,4.8,4.5,"Rated 5 by 90% people,Rated 4 by 9% people,Rated 3 by 1% people,Rated 2 by 0% people,Rated 1 by 0% people",Quiet,98%,6097
+42,La Grotta,"2637 Peachtree Rd. NE Atlanta, GA  30305",Italian,4.9,4.8,4.8,4.6,"Rated 5 by 90% people,Rated 4 by 7% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,00%,1724
+43,Lahaina Grill,"127 Lahainaluna Rd. Lahaina, HI  96761",American,4.8,4.9,4.7,4.3,"Rated 5 by 88% people,Rated 4 by 9% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,94%,6671
 44,LArtusi,"New York, NY",Italian,4.8,4.7,4.7,4.5,"Rated 5 by 86% people,Rated 4 by 10% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,97%,2404
-45,Le Bilboquet - Dallas,"Dallas, TX",French,4.8,4.8,4.8,4.5,"Rated 5 by 88% people,Rated 4 by 7% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,92%,1296
+45,Le Bilboquet - Dallas,"4514 Travis Street Suite 124 Dallas, TX  75205",French,4.8,4.8,4.8,4.5,"Rated 5 by 88% people,Rated 4 by 7% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,92%,1296
 46,Le Coucou,"New York, NY",French,4.7,4.7,4.8,4.2,"Rated 5 by 82% people,Rated 4 by 12% people,Rated 3 by 4% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,93%,2925
-47,Le Diplomate,"Washington, DC",French,4.8,4.7,4.7,4.4,"Rated 5 by 85% people,Rated 4 by 11% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,95%,8882
+47,Le Diplomate,"1601 14th St. NW Washington, DC  20009",French,4.8,4.7,4.7,4.4,"Rated 5 by 85% people,Rated 4 by 11% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,95%,8882
 48,Le Vallauris,"Palm Springs, CA",French,4.8,4.8,4.8,4.4,"Rated 5 by 86% people,Rated 4 by 10% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 1% people",Quiet,95%,2767
-49,Linwoods,"Owings Mills, MD",Contemporary American,4.8,4.8,4.7,4.4,"Rated 5 by 85% people,Rated 4 by 11% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,97%,3268
-50,Mama's Fish House,"Paia, HI",Fish,4.9,4.9,4.9,4.3,"Rated 5 by 92% people,Rated 4 by 6% people,Rated 3 by 2% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,98%,30639
-51,Marc Forgione,"New York, NY",Contemporary American,4.8,4.8,4.8,4.3,"Rated 5 by 87% people,Rated 4 by 8% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,86%,2809
-52,Marcel's by Robert Wiedmaier,"Washington, DC",French,4.9,4.9,4.8,4.4,"Rated 5 by 87% people,Rated 4 by 10% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 0% people",Quiet,96%,3353
-53,Marea,"New York, NY",Italian,4.8,4.7,4.7,4.3,"Rated 5 by 85% people,Rated 4 by 10% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,93%,7748
+49,Linwoods,"25 Crossroads Drive Owings Mills, MD  21117",Contemporary American,4.8,4.8,4.7,4.4,"Rated 5 by 85% people,Rated 4 by 11% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,97%,3268
+50,Mama's Fish House,"799 Poho Place Paia, HI  96779",Fish,4.9,4.9,4.9,4.3,"Rated 5 by 92% people,Rated 4 by 6% people,Rated 3 by 2% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,98%,30639
+51,Marc Forgione,"134 Reade Street New York, NY  10013",Contemporary American,4.8,4.8,4.8,4.3,"Rated 5 by 87% people,Rated 4 by 8% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,86%,2809
+52,Marcel's by Robert Wiedmaier,"2401 Pennsylvania Ave. Washington, DC  20037",French,4.9,4.9,4.8,4.4,"Rated 5 by 87% people,Rated 4 by 10% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 0% people",Quiet,96%,3353
+53,Marea,"240 Central Park South New York, NY  10019",Italian,4.8,4.7,4.7,4.3,"Rated 5 by 85% people,Rated 4 by 10% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,93%,7748
 54,Market Restaurant and Bar,"Del Mar, CA",Contemporary American,4.9,4.8,4.5,4.4,"Rated 5 by 85% people,Rated 4 by 13% people,Rated 3 by 1% people,Rated 2 by 0% people,Rated 1 by 1% people",Moderate,97%,3044
-55,Mistral - Sherman Oaks,"Sherman Oaks, CA",French,4.8,4.9,4.8,4.6,"Rated 5 by 89% people,Rated 4 by 7% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,95%,1233
+55,Mistral - Sherman Oaks,"13422 Ventura Blvd. Sherman Oaks, CA  91423",French,4.8,4.9,4.8,4.6,"Rated 5 by 89% people,Rated 4 by 7% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,95%,1233
 56,The Modern - Bar Room and Dining Room,"New York, NY",Contemporary American,4.7,4.7,4.7,4.4,"Rated 5 by 80% people,Rated 4 by 16% people,Rated 3 by 3% people,Rated 2 by 0% people,Rated 1 by 1% people",Moderate,91%,4317
-57,Momofuku Ko,"New York, NY",American,4.8,4.9,4.8,4.4,"Rated 5 by 87% people,Rated 4 by 7% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,90%,650
-58,Neighborhood Services,"Dallas, TX",American,4.8,4.8,4.7,4.5,"Rated 5 by 87% people,Rated 4 by 9% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,91%,1290
-59,Orchids at Palm Court,"Cincinnati, OH",French American,4.6,4.8,4.9,4.3,"Rated 5 by 82% people,Rated 4 by 12% people,Rated 3 by 3% people,Rated 2 by 2% people,Rated 1 by 1% people",Moderate,94%,2509
-60,Oriole,"Chicago, IL",Contemporary American,4.9,5.0,4.9,4.5,"Rated 5 by 96% people,Rated 4 by 2% people,Rated 3 by 1% people,Rated 2 by 1% people,Rated 1 by 0% people",Quiet,98%,1132
-61,Parc,"Philadelphia, PA",French,4.7,4.7,4.7,4.4,"Rated 5 by 81% people,Rated 4 by 14% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,96%,11231
+57,Momofuku Ko,"8 Extra Place New York, NY  10003",American,4.8,4.9,4.8,4.4,"Rated 5 by 87% people,Rated 4 by 7% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,90%,650
+58,Neighborhood Services,"5027 W Lovers Ln Dallas, TX  75209",American,4.8,4.8,4.7,4.5,"Rated 5 by 87% people,Rated 4 by 9% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,91%,1291
+59,Orchids at Palm Court,"Hilton Cincinnati 35 West Fifth Street Cincinnati, OH  45202",French American,4.6,4.8,4.9,4.3,"Rated 5 by 82% people,Rated 4 by 12% people,Rated 3 by 3% people,Rated 2 by 2% people,Rated 1 by 1% people",Moderate,94%,2509
+60,Oriole,"661 W. Walnut St. Chicago, IL  60661",Contemporary American,4.9,5.0,4.9,4.5,"Rated 5 by 96% people,Rated 4 by 2% people,Rated 3 by 1% people,Rated 2 by 1% people,Rated 1 by 0% people",Quiet,98%,1132
+61,Parc,"227 South 18th Street Philadelphia, PA  19103",French,4.7,4.7,4.7,4.4,"Rated 5 by 81% people,Rated 4 by 14% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,96%,11231
 62,Per Se,"New York, NY",American,4.8,4.8,4.8,4.3,"Rated 5 by 85% people,Rated 4 by 10% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Quiet,94%,2187
-63,The Polo Bar,"New York, NY",American,4.7,4.8,4.8,4.4,"Rated 5 by 88% people,Rated 4 by 8% people,Rated 3 by 1% people,Rated 2 by 2% people,Rated 1 by 1% people",Moderate,91%,699
-64,Polo Lounge @ The Beverly Hills Hotel,"Beverly Hills, CA",American,4.6,4.6,4.8,4.0,"Rated 5 by 82% people,Rated 4 by 10% people,Rated 3 by 5% people,Rated 2 by 2% people,Rated 1 by 1% people",Moderate,92%,1381
-65,PRESS,"St. Helena, CA",American,4.6,4.7,4.6,4.1,"Rated 5 by 79% people,Rated 4 by 11% people,Rated 3 by 6% people,Rated 2 by 3% people,Rated 1 by 1% people",Moderate,83%,2560
-66,Quince,"San Francisco, CA",Californian,4.8,4.9,4.9,4.3,"Rated 5 by 90% people,Rated 4 by 5% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 1% people",Quiet,86%,2577
+63,The Polo Bar,"1 E. 55th St. New York, NY  10022",American,4.7,4.8,4.8,4.4,"Rated 5 by 88% people,Rated 4 by 8% people,Rated 3 by 1% people,Rated 2 by 2% people,Rated 1 by 1% people",Moderate,91%,699
+64,Polo Lounge @ The Beverly Hills Hotel,"9641 Sunset Blvd. Beverly Hills, CA  90210",American,4.6,4.6,4.8,4.0,"Rated 5 by 82% people,Rated 4 by 10% people,Rated 3 by 5% people,Rated 2 by 2% people,Rated 1 by 1% people",Moderate,92%,1381
+65,PRESS,"587 St. Helena Hwy (Hwy 29) St. Helena, CA  94574",American,4.6,4.7,4.6,4.1,"Rated 5 by 79% people,Rated 4 by 11% people,Rated 3 by 6% people,Rated 2 by 3% people,Rated 1 by 1% people",Moderate,83%,2560
+66,Quince,"470 Pacific Avenue San Francisco, CA  94133",Californian,4.8,4.9,4.9,4.3,"Rated 5 by 90% people,Rated 4 by 5% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 1% people",Quiet,86%,2577
 67,Raoul's,"New York, NY",Contemporary French,4.8,4.6,4.6,4.3,"Rated 5 by 82% people,Rated 4 by 14% people,Rated 3 by 3% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,86%,1838
 68,Rasika,"Washington, DC",Indian,None,None,None,None,"Rated 5 by 79% people,Rated 4 by 14% people,Rated 3 by 2% people,Rated 2 by 2% people,Rated 1 by 2% people",None,None,8652
 69,Restaurant L,"Cincinnati, OH",French,4.9,4.8,4.9,4.5,"Rated 5 by 91% people,Rated 4 by 5% people,Rated 3 by 2% people,Rated 2 by 2% people,Rated 1 by 0% people",Quiet,97%,787
-70,Riccardo Enoteca,"Chicago, IL",Italian,4.8,4.9,4.8,4.7,"Rated 5 by 90% people,Rated 4 by 9% people,Rated 3 by 1% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,00%,616
+70,Riccardo Enoteca,"2116 N Clark St Chicago, IL  60614",Italian,4.8,4.9,4.8,4.7,"Rated 5 by 90% people,Rated 4 by 9% people,Rated 3 by 1% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,00%,616
 71,Rich Table,"San Francisco, CA",Californian,4.6,4.6,4.4,4.3,"Rated 5 by 76% people,Rated 4 by 17% people,Rated 3 by 5% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,92%,1735
-72,RL Restaurant,"Chicago, IL",American,4.8,4.8,4.8,4.4,"Rated 5 by 86% people,Rated 4 by 9% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,94%,6048
-73,RPM Restaurants - Multiple Locations,"Chicago, IL",Italian,4.7,4.7,4.7,4.4,"Rated 5 by 81% people,Rated 4 by 12% people,Rated 3 by 4% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,92%,11493
-74,Rudy & Paco Restaurant & Bar,"Galveston, TX",Seafood,4.9,4.9,4.9,4.6,"Rated 5 by 93% people,Rated 4 by 5% people,Rated 3 by 1% people,Rated 2 by 0% people,Rated 1 by 0% people",Quiet,99%,2974
-75,Ruth's Chris Steak House - Baton Rouge,"Baton Rouge, LA",Steakhouse,4.9,4.9,4.8,4.7,"Rated 5 by 95% people,Rated 4 by 4% people,Rated 3 by 1% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,99%,1367
-76,The Saddle River Inn,"Saddle River, NJ",French,4.9,4.8,4.8,4.6,"Rated 5 by 91% people,Rated 4 by 7% people,Rated 3 by 2% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,98%,1821
-77,Saint Jacques French Cuisine,"Raleigh, NC",French,4.8,4.8,4.5,4.4,"Rated 5 by 85% people,Rated 4 by 8% people,Rated 3 by 4% people,Rated 2 by 2% people,Rated 1 by 1% people",Quiet,91%,2426
-78,Shinsei Restaurant,"Dallas, TX",Asian,4.8,4.7,4.7,4.4,"Rated 5 by 88% people,Rated 4 by 9% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,93%,1118
-79,SHU - Sushi House Unico - Bel Air,"Bel Air, CA",Sushi,4.8,4.7,4.6,4.4,"Rated 5 by 87% people,Rated 4 by 9% people,Rated 3 by 3% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,97%,425
-80,Sotto,"Cincinnati, OH",Italian,4.9,4.9,4.9,4.7,"Rated 5 by 93% people,Rated 4 by 5% people,Rated 3 by 1% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,98%,4074
-81,Spinasse,"Seattle, WA",Italian,4.8,4.8,4.7,4.4,"Rated 5 by 86% people,Rated 4 by 9% people,Rated 3 by 4% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,95%,2659
-82,St. Francis Winery & Vineyards,"Santa Rosa, CA",Californian,4.9,4.9,4.9,4.8,"Rated 5 by 93% people,Rated 4 by 5% people,Rated 3 by 2% people,Rated 2 by 0% people,Rated 1 by 0% people",Quiet,98%,1382
+72,RL Restaurant,"115 E Chicago Ave Chicago, IL  60611",American,4.8,4.8,4.8,4.4,"Rated 5 by 86% people,Rated 4 by 9% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,94%,6048
+73,RPM Restaurants - Multiple Locations,,Italian,4.7,4.7,4.7,4.4,"Rated 5 by 81% people,Rated 4 by 12% people,Rated 3 by 4% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,92%,11493
+74,Rudy & Paco Restaurant & Bar,"2028 Postoffice Street Galveston, TX  77550",Seafood,4.9,4.9,4.9,4.6,"Rated 5 by 93% people,Rated 4 by 5% people,Rated 3 by 1% people,Rated 2 by 0% people,Rated 1 by 0% people",Quiet,99%,2974
+75,Ruth's Chris Steak House - Baton Rouge,"4836 Constitution Avenue Baton Rouge, LA  70808",Steakhouse,4.9,4.9,4.8,4.7,"Rated 5 by 95% people,Rated 4 by 4% people,Rated 3 by 1% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,99%,1368
+76,The Saddle River Inn,"2 Barnstable Court Saddle River, NJ  07458",French,4.9,4.8,4.8,4.6,"Rated 5 by 91% people,Rated 4 by 7% people,Rated 3 by 2% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,98%,1821
+77,Saint Jacques French Cuisine,"6112 Falls of Neuse Rd. Raleigh, NC  27609",French,4.8,4.8,4.5,4.4,"Rated 5 by 85% people,Rated 4 by 8% people,Rated 3 by 4% people,Rated 2 by 2% people,Rated 1 by 1% people",Quiet,91%,2426
+78,Shinsei Restaurant,"7713 Inwood Rd. Dallas, TX  75209",Asian,4.8,4.7,4.7,4.4,"Rated 5 by 88% people,Rated 4 by 9% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,93%,1118
+79,SHU - Sushi House Unico - Bel Air,"2932 1/2 Beverly Glen Circle Bel Air, CA  90077",Sushi,4.8,4.7,4.6,4.4,"Rated 5 by 87% people,Rated 4 by 9% people,Rated 3 by 3% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,97%,425
+80,Sotto,"118 E. 6th St. Cincinnati, OH  45202",Italian,4.9,4.9,4.9,4.7,"Rated 5 by 93% people,Rated 4 by 5% people,Rated 3 by 1% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,98%,4074
+81,Spinasse,"1531 14th Avenue Seattle, WA  98122",Italian,4.8,4.8,4.7,4.4,"Rated 5 by 86% people,Rated 4 by 9% people,Rated 3 by 4% people,Rated 2 by 1% people,Rated 1 by 1% people",Moderate,95%,2659
+82,St. Francis Winery & Vineyards,"100 Pythian Road Santa Rosa, CA  95409",Californian,4.9,4.9,4.9,4.8,"Rated 5 by 93% people,Rated 4 by 5% people,Rated 3 by 2% people,Rated 2 by 0% people,Rated 1 by 0% people",Quiet,98%,1382
 83,Steve & Cookie's By the Bay,"Margate, NJ",American,4.9,4.8,4.7,4.5,"Rated 5 by 87% people,Rated 4 by 11% people,Rated 3 by 2% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,99%,5414
-84,Stonehouse at San Ysidro Ranch,"Santa Barbara, CA",Contemporary American,4.7,4.8,4.9,4.3,"Rated 5 by 89% people,Rated 4 by 7% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Quiet,96%,1514
+84,Stonehouse at San Ysidro Ranch,"900 San Ysidro Lane Santa Barbara, CA  93108",Contemporary American,4.7,4.8,4.9,4.3,"Rated 5 by 89% people,Rated 4 by 7% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Quiet,96%,1514
 85,Sushi Nakazawa - Sushi Bar,"New York, NY",Sushi,4.9,4.9,4.8,4.4,"Rated 5 by 90% people,Rated 4 by 7% people,Rated 3 by 2% people,Rated 2 by 0% people,Rated 1 by 0% people",Quiet,97%,750
-86,The Table at Season To Taste,"Cambridge, MA",American,4.9,4.9,4.7,4.5,"Rated 5 by 88% people,Rated 4 by 9% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 0% people",Quiet,95%,795
-87,Talula’s Garden,"Philadelphia, PA",American,4.8,4.8,4.8,4.4,"Rated 5 by 84% people,Rated 4 by 12% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,96%,8647
-88,The Metro Wine Bar & Bistro,"Oklahoma City, OK",Contemporary American,4.9,4.9,4.9,4.7,"Rated 5 by 94% people,Rated 4 by 5% people,Rated 3 by 0% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,99%,1871
-89,Toscana,"Los Angeles, CA",Italian,4.7,4.8,4.5,4.3,"Rated 5 by 83% people,Rated 4 by 13% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,88%,479
+86,The Table at Season To Taste,"2447 Massachusetts Cambridge, MA  02140",American,4.9,4.9,4.7,4.5,"Rated 5 by 88% people,Rated 4 by 9% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 0% people",Quiet,95%,795
+87,Talula’s Garden,"210 West Washington Square Philadelphia, PA  19106",American,4.8,4.8,4.8,4.4,"Rated 5 by 84% people,Rated 4 by 12% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,96%,8647
+88,The Metro Wine Bar & Bistro,"6418 N Western Ave Oklahoma City, OK  73116",Contemporary American,4.9,4.9,4.9,4.7,"Rated 5 by 94% people,Rated 4 by 5% people,Rated 3 by 0% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,99%,1871
+89,Toscana,"11633 San Vicente Blvd Los Angeles, CA  90049",Italian,4.7,4.8,4.5,4.3,"Rated 5 by 83% people,Rated 4 by 13% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,88%,479
 90,Townsend,"Philadelphia, PA",Contemporary French,4.6,4.6,4.2,4.1,"Rated 5 by 68% people,Rated 4 by 20% people,Rated 3 by 9% people,Rated 2 by 2% people,Rated 1 by 1% people",Moderate,89%,1222
-91,True Food Kitchen - Chicago,"Chicago, IL",American,4.7,4.6,4.6,4.4,"Rated 5 by 80% people,Rated 4 by 16% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,97%,1608
-92,Uchi - Dallas,"Dallas, TX",Sushi,4.9,4.8,4.8,4.5,"Rated 5 by 91% people,Rated 4 by 6% people,Rated 3 by 2% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,96%,2259
-93,UMI,"Atlanta, GA",Sushi,4.9,4.8,4.7,4.4,"Rated 5 by 90% people,Rated 4 by 7% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,97%,1797
+91,True Food Kitchen - Chicago,"1 W Erie Street Chicago, IL  60654",American,4.7,4.6,4.6,4.4,"Rated 5 by 80% people,Rated 4 by 16% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,97%,1608
+92,Uchi - Dallas,"2817 Maple Ave Dallas, TX  75201",Sushi,4.9,4.8,4.8,4.5,"Rated 5 by 91% people,Rated 4 by 6% people,Rated 3 by 2% people,Rated 2 by 0% people,Rated 1 by 0% people",Moderate,96%,2259
+93,UMI,"3050 Peachtree Rd Atlanta, GA  30305",Sushi,4.9,4.8,4.7,4.4,"Rated 5 by 90% people,Rated 4 by 7% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,97%,1797
 94,Upland,"New York, NY",Contemporary American,4.5,4.4,4.6,4.1,"Rated 5 by 75% people,Rated 4 by 15% people,Rated 3 by 6% people,Rated 2 by 2% people,Rated 1 by 1% people",Moderate,88%,2581
 95,Vernick Food & Drink,"Philadelphia, PA",American,4.8,4.7,4.4,4.4,"Rated 5 by 80% people,Rated 4 by 17% people,Rated 3 by 3% people,Rated 2 by 1% people,Rated 1 by 0% people",Moderate,97%,1659
 96,Vetri Cucina,"Philadelphia, PA",Italian,4.9,4.9,4.8,4.4,"Rated 5 by 92% people,Rated 4 by 5% people,Rated 3 by 2% people,Rated 2 by 1% people,Rated 1 by 0% people",Quiet,94%,2366

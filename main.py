@@ -8,7 +8,7 @@ import logging
 from scrape.get_reviews import get_all_reviews
 from data_base.build_db import build_db
 from scrape.restaurant_info import restaurant_info
-import api.weather_api as weather_api
+from api.weather_api import weather_api
 
 LINK = 'https://www.opentable.com/m/best-restaurants-in-america-for-2017/'
 

@@ -20,6 +20,7 @@ def restaurant_info(rest_links, restaurants, locations):
     recommendations = []
     nums_of_reviews = []
     cuisine_type = []
+    locations_zipcode = []
     i = 0
 
     print('Writing 100restaurants.csv')
@@ -73,8 +74,16 @@ def restaurant_info(rest_links, restaurants, locations):
         except:
             cuisine_type.append('None')
 
+        try:
+            if temp_res.location()[-1].isdigit():
+                locations_zipcode.append(temp_res.location())
+            else:
+                locations_zipcode.append(locations[idx])
+        except:
+            locations_zipcode.append(None)
+
     # Creating data base
-    d = {'Name': restaurants, 'Location': locations, 'Cuisine type': cuisine_type, 'Food rating': food_rating,
+    d = {'Name': restaurants, 'Location': locations_zipcode, 'Cuisine type': cuisine_type, 'Food rating': food_rating,
          'Service rating': service_rating,
          'Ambience rating': ambience_rating, 'Value rating': value_rating,
          'Rating distribution': rating_distributions, 'Noise': noise_status, 'Recommendations': recommendations,
