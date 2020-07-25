@@ -5,7 +5,7 @@ import requests
 from datetime import datetime, timedelta
 from requests.exceptions import HTTPError
 from data_base.build_db import make_connection_db
-import weather_api_queries as q
+import api.weather_api_queries as q
 
 
 key = '736defaca7664db3aedb4e753de94e88'

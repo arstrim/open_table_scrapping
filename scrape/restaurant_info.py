@@ -3,9 +3,10 @@ from scrape.restaurant_class import Restaurant
 import pandas as pd
 import os
 
-PATH = os.path.join('data',"100restaurants.csv")
+PATH = os.path.join('data', "100restaurants.csv")
 
-def restaurant_info(rest_links, restaurants):
+
+def restaurant_info(rest_links, restaurants, locations):
     """
     scrape info of all the restaurants
     """
@@ -19,7 +20,6 @@ def restaurant_info(rest_links, restaurants):
     recommendations = []
     nums_of_reviews = []
     cuisine_type = []
-    locations = []
     i = 0
 
     print('Writing 100restaurants.csv')
@@ -73,13 +73,9 @@ def restaurant_info(rest_links, restaurants):
         except:
             cuisine_type.append('None')
 
-        try:
-            locations.append(temp_res.location())
-        except:
-            locations.append('None')
-
     # Creating data base
-    d = {'Name': restaurants, 'Location': locations,'Cuisine type': cuisine_type, 'Food rating': food_rating, 'Service rating': service_rating,
+    d = {'Name': restaurants, 'Location': locations, 'Cuisine type': cuisine_type, 'Food rating': food_rating,
+         'Service rating': service_rating,
          'Ambience rating': ambience_rating, 'Value rating': value_rating,
          'Rating distribution': rating_distributions, 'Noise': noise_status, 'Recommendations': recommendations,
          'No. of reviews': nums_of_reviews}
@@ -90,6 +86,4 @@ def restaurant_info(rest_links, restaurants):
     df.dropna(axis=0, thresh=5, inplace=True)
     df.reset_index()
 
-
     df.to_csv(PATH)
-

@@ -8,15 +8,17 @@ import logging
 from scrape.get_reviews import get_all_reviews
 from data_base.build_db import build_db
 from scrape.restaurant_info import restaurant_info
+import api.weather_api as weather_api
 
 LINK = 'https://www.opentable.com/m/best-restaurants-in-america-for-2017/'
 
 
-def write_csv(rest_names, rest_links):
+def write_csv(rest_names, rest_links, locations):
     """
     writes file reviews.csv and 100restaurants.csv (all reviews from all restaurants).
     :param rest_names: list of names of all restaurants
     :param rest_links: list of links of all restaurants
+    :param locations: list of locations of all restaurants
     :return: None
     """
     scrap_file = os.path.join('.','data',"scrap_date.txt")
@@ -36,26 +38,31 @@ def write_csv(rest_names, rest_links):
         logging.error('File not found: ' + scrap_file)
         sys.exit()
 
-    restaurant_info(rest_links, rest_names)
+    restaurant_info(rest_links, rest_names, locations)
     get_all_reviews(rest_links, rest_names, scrap_date)
 
 
-def get_links_and_names():
+def get_links_names_locations():
     """
-    gets all links and restaurants names
-    :return: tuple: list: rest_links (restaurants links), restaurants (restaurant names)
+    gets all links and restaurants names and their locations.
+    :return: tuple: list: rest_links (restaurants links), restaurants (restaurant names), locations
     """
     r = requests.get(LINK)
     soup = BeautifulSoup(r.content, 'html.parser')
     restaurants = []
     rest_links = []
+    locations = []
 
     # Collecting restaurants names and urls
     for rest in soup.find_all('div', class_='restaurant tablet--flex'):
         restaurants.append(rest.find('h3').text)
         rest_links.append('https://www.opentable.com/' + rest.find('a', class_='rest-profile-link').get('href'))
+        try:
+            locations.append(rest.find('h4').text.split('\n')[0].rstrip())
+        except:
+            locations.append(None)
 
-    return rest_links, restaurants
+    return rest_links, restaurants, locations
 
 
 def main():
@@ -71,9 +78,9 @@ def main():
 
     if args.w:
         logging.info("writting csv")
-        (rest_links, restaurants) = get_links_and_names()
+        (rest_links, restaurants, locations) = get_links_names_locations()
         # write csv files
-        write_csv(restaurants, rest_links)
+        write_csv(restaurants, rest_links, locations)
 
     if args.db:
         logging.info('building/updating database')

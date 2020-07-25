@@ -44,7 +44,3 @@ class Restaurant:
         summary = self.soup_rest.find('div', class_='d3ba82e4').find_all('div', class_='c3981cf8 _965a91d5')
         out = summary[3].text
         return out
-
-    def location(self):
-        out = self.soup_rest.find('a', class_='_3ddfcf5c _5c8483c8').find('span').text
-        return out
