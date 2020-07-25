@@ -78,6 +78,9 @@ def main():
     if args.db:
         logging.info('building/updating database')
         build_db(args.db[0], args.db[1])
+    if args.api:
+        logging.info('building/updating weathers information table')
+        weather_api(args.api[0], args.api[1])
 
 
 if __name__ == '__main__':

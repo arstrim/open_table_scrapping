@@ -63,7 +63,7 @@ def get_weather(connection, result):
     except ValueError:
         return
     else:
-        next_day = str(datetime.strptime(result['date'], '%Y-%m-%d') + timedelta(days=1))[:10] #TODO do try for requests
+        next_day = str(datetime.strptime(result['date'], '%Y-%m-%d') + timedelta(days=1))[:10]
         try:
             r = requests.get("http://api.weatherbit.io/v2.0/history/daily",
                              params={
@@ -124,9 +124,7 @@ def weather_api(user, password):
             logging.info('call made succesfully')
         else:
             update_weather_id_in_reviews(connection, result[i], weather_id)
-    if i % 100 == 0:
-        connection.commit()
+        if i % 100 == 0:
+            connection.commit()
     connection.commit()
     logging.info('Updated weathers and reviews table')
-
-weather_api('ariela', 'ariela')
