@@ -65,6 +65,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-w', '-write', action='store_true', help='write csv')
     parser.add_argument('-db', '-database',  type=str, nargs = 2, metavar=('user', 'password'), help='build/update database')
+    parser.add_argument('-api', '-weather_api', type=str, nargs=2, metavar=('user', 'password'),
+                        help='build/update weather information table')
     args = parser.parse_args()
 
     if args.w:
