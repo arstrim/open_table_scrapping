@@ -40,8 +40,8 @@ wheel==0.24.0
 zope.interface==5.1.0
 ```
 # Authors 
-Ariela Strimling, arstrim97@gmail.com
-Areej Eweida, areejeweida@gmail.com
+- Ariela Strimling, arstrim97@gmail.com
+- Areej Eweida, areejeweida@gmail.com
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
