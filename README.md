@@ -19,26 +19,12 @@ This project will scrape, clean, and analyze 100 best restaurants in America for
 ![alt text](https://github.com/areejeweida/opentable/blob/master/Capture.PNG?raw=true)
 
 ## Requirements
+## Installation
+[This file](https://github.com/arstrim/project/blob/master/requirements.txt) should be downloaded to later install it like:
 ```
-pymysql
-beautifulsoup4==4.9.1
-bs4==0.0.1
-certifi==2020.4.5.2
-chardet==3.0.4
-DateTime==4.3
-idna==2.9
-numpy==1.18.5
-pandas==1.0.4
-python-dateutil==2.8.1
-pytz==2020.1
-regex==2020.6.8
-requests==2.24.0
-six==1.15.0
-soupsieve==2.0.1
-urllib3==1.25.9
-wheel==0.24.0
-zope.interface==5.1.0
+pip install -r requirements.txt
 ```
+
 # Authors 
 - Ariela Strimling, arstrim97@gmail.com
 - Areej Eweida, areejeweida@gmail.com
