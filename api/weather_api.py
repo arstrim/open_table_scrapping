@@ -2,14 +2,14 @@ import pymysql.cursors
 import json
 import logging
 import requests
+import sys
 from datetime import datetime, timedelta
 from requests.exceptions import HTTPError
 from data_base.build_db import make_connection_db
 import api.weather_api_queries as q
 
 
-key = '736defaca7664db3aedb4e753de94e88'
-
+API_LIMIT = 1000
 
 def build_weathers(connection):
     """
@@ -50,12 +50,13 @@ def exists_weather_id(connection, result):
     return weather_id
 
 
-def get_weather(connection, result):
+def get_weather(connection, result, key):
     """
     Makes a call to weatherbit API,
     inserts the information in weathers table and updates the weather_id in reviews table
     :param connection: connection to database
     :param result: dictionary of date, rest_id and zipcode on database needed to extract weather information
+    :param key: API key
     :return: None
     """
     try:
@@ -108,23 +109,46 @@ def update_weather_id_in_reviews(connection, result, weather_id):
 
 
 def weather_api(user, password):
-
+    """
+    Looks for all combinations of zipcode and dates in database.
+    Creates a new table: weathers and a forgein key in the reviews table to point at it
+    Limitations: API_LIMIT limit of calls the program will do, currently it has 4 keys (1000 cals per key),
+        if they get used you have to wait a day to reuse them, the program will not crash.
+    :param user: username of the database
+    :param password: password of the database
+    :return: None
+    """
     connection = make_connection_db(user, password)
     build_weathers(connection)
     with connection.cursor() as cur:
         cur.execute(q.select_weather_parameters)
         result = cur.fetchall()
 
-    # for i in range(20): #TODO change for less calls
+    key = '736defaca7664db3aedb4e753de94e88'
+    key1 = '37fefcd23dd04613ba84b4d661d3c1eb'
+    key2 = '9f3017b6990c4a5ba7c7d8c4ccd3565d'
+    key3 = 'b32537f061e84935ae6700dd9a97ce53'
+    keys = [key, key1, key2, key3]
+    k = 0   #index of keys
+
+    # for i in range(40, 100): #TODO change for less calls in debug
     for i in range(len(result)):
         logging.debug('looping ' + str(i) + ' of total ' + str(len(result)))
         weather_id = exists_weather_id(connection, result[i])
         if weather_id is None:
-            get_weather(connection, result[i])
+            get_weather(connection, result[i], keys[k])
             logging.info('call made succesfully')
         else:
             update_weather_id_in_reviews(connection, result[i], weather_id)
-        if i % 100 == 0:
+        if i % API_LIMIT == 0 and k < len(keys) and i != 0:
+            k += 1
+            try:
+                logging.debug('changed key to: ' + str(keys[k]))
+            except IndexError:
+                connection.commit()
+                logging.info('Not enough keys to perform this database')
+                sys.exit()
+        if i % (API_LIMIT/10) == 0:
             connection.commit()
     connection.commit()
     logging.info('Updated weathers and reviews table')
