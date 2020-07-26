@@ -1,7 +1,7 @@
 ![image](https://logodix.com/logo/44715.png)
 
 # OpenTable Scarper
-This project will scrape, clean, and analyze 100 best restaurants in america for 2017.
+This project will scrape, clean, and analyze 100 best restaurants in America for 2017.
 
 ## Overview 
 
@@ -14,6 +14,9 @@ This project will scrape, clean, and analyze 100 best restaurants in america for
 #  Project Status
 - [![Build Status](http://img.shields.io/travis/sosedoff/opentable.svg?style=flat)](https://travis-ci.org/sosedoff/opentable)
 
+
+# Flowchart
+![alt text](https://github.com/areejeweida/opentable/blob/master/Capture.PNG?raw=true)
 
 ## Requirements
 ```
