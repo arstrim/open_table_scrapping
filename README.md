@@ -1,18 +1,18 @@
 ![image](https://logodix.com/logo/44715.png)
 
-# Project Title 
-Data mining project - Checkpoint #1
+# OpenTable Scarper
+This project will scrape, clean, and analyze 100 best restaurants in america for 2017.
 
-#  Scope
-In this step we web scrape data of 100 restaurants from OpenTable website.
+## Overview 
 
-main URL: https://www.opentable.com/m/best-restaurants-in-america-for-2017/
+- The data is retrieved and parsed from OpenTable web (main URL: https://www.opentable.com/m/best-restaurants-in-america-for-2017/) via a Beautiful Soup and Requests packages.
+- Data is then cleaned and built in Python.
+- Data is written to a MySQL database via PyMySQL connection.
+- The data is deployed on an EC2 instance in AWS.
+- Finally, the data is placed in ReDash for BI Analysis.
 
-We create a main class 'Restaurant', and for each one of the methods is a feature we extract from the restaurant link 
-where HTTP requests are done by requests library and then we parse HTML pages using BeautifulSoup library.
-
-# Authors 
-Ariela Strimling and Areej Eweida
+#  Project Status
+- [![Build Status](http://img.shields.io/travis/sosedoff/opentable.svg?style=flat)](https://travis-ci.org/sosedoff/opentable)
 
 
 ## Requirements
@@ -36,6 +36,9 @@ urllib3==1.25.9
 wheel==0.24.0
 zope.interface==5.1.0
 ```
+# Authors 
+Ariela Strimling, arstrim97@gmail.com
+Areej Eweida, areejeweida@gmail.com
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
