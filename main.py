@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 import sys
 import logging
+import string
 from scrape.get_reviews import get_all_reviews
 from data_base.build_db import build_db
 from scrape.restaurant_info import restaurant_info
@@ -55,11 +56,13 @@ def get_links_names_locations():
 
     # Collecting restaurants names and urls
     for rest in soup.find_all('div', class_='restaurant tablet--flex'):
-        restaurants.append(rest.find('h3').text)
+        dirty_name = rest.find('h3').text
+        name = ''.join([i if i in string.printable else '' for i in dirty_name])
+        restaurants.append(name)
         rest_links.append('https://www.opentable.com/' + rest.find('a', class_='rest-profile-link').get('href'))
         try:
             locations.append(rest.find('h4').text.split('\n')[0].rstrip())
-        except:
+        except AttributeError:
             locations.append(None)
 
     return rest_links, restaurants, locations

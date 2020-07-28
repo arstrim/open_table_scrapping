@@ -18,8 +18,8 @@ def make_connection(user, password):
     """Returns a connection to create database"""
     try:
         connection = pymysql.connect(host='localhost',
-                                    user=user,
-                                    password=password)
+                                     user=user,
+                                     password=password)
     except pymysql.err.OperationalError:
         logging.error('user: {}  or password: {} not valid'.format(user, password))
         sys.exit()
@@ -52,14 +52,14 @@ def get_data(user, password):
     """
     # path = os.path.join(FOLDER,FILENAME)
     try:
-        data = pd.read_csv(os.path.join(FOLDER,FILENAME))
+        data = pd.read_csv(os.path.join(FOLDER, FILENAME))
     except FileNotFoundError:
-        logging.error('File not found: ' + os.path.join(FOLDER,FILENAME))
+        logging.error('File not found: ' + os.path.join(FOLDER, FILENAME))
         sys.exit()
     try:
-        data2 = pd.read_csv(os.path.join(FOLDER,FILENAME2))
+        data2 = pd.read_csv(os.path.join(FOLDER, FILENAME2))
     except FileNotFoundError:
-        logging.error('File not found ' + os.path.join(FOLDER,FILENAME2))
+        logging.error('File not found ' + os.path.join(FOLDER, FILENAME2))
         sys.exit()
     data.fillna(0, inplace=True)
     data2.fillna(0, inplace=True)
@@ -86,9 +86,9 @@ def get_data(user, password):
 
 def strip_comment(comment):
     """Returns a comment with only alphanumeric and ' ' content"""
-    com = re.sub('[^A-Za-z0-9 ]+', ' ', comment)
-    len_comment = min(len(com), MAX_CHAR)
-    return com[:len_comment]
+    # com = re.sub('[^A-Za-z0-9 ]+', ' ', comment)
+    len_comment = min(len(comment), MAX_CHAR)
+    return comment[:len_comment]
 
 
 def insert_restaurants(cur, df):
@@ -106,18 +106,18 @@ def insert_restaurants(cur, df):
             logging.debug(str(i) + ' found restaurant,  should update')
             # restaurant is in database
             id = result[0]['id']
-            cur.execute(q.update_restaurant, {'loc' : str(df.loc[i, 'Location']),
-                                    'cus': str(df.loc[i, 'Cuisine type']),
-                                    'id': int(id)})
-            cur.execute(q.update_rest_review, {'n_rev': int(df.loc[i, 'No. of reviews']),
-                                              'noise': str(df.loc[i, 'Noise']),
-                                              'f_rate': float(df.loc[i, 'Food rating']),
-                                              's_rate': float(df.loc[i, 'Service rating']),
-                                              'a_rate': float(df.loc[i, 'Ambience rating']),
-                                              'v_rate': float(df.loc[i, 'Value rating']),
-                                              'rate_dist': str(df.loc[i, 'Rating distribution']),
-                                              'rec': str(df.loc[i, 'Recommendations']),
+            cur.execute(q.update_restaurant, {'loc': str(df.loc[i, 'Location']),
+                                              'cus': str(df.loc[i, 'Cuisine type']),
                                               'id': int(id)})
+            cur.execute(q.update_rest_review, {'n_rev': int(df.loc[i, 'No. of reviews']),
+                                               'noise': str(df.loc[i, 'Noise']),
+                                               'f_rate': float(df.loc[i, 'Food rating']),
+                                               's_rate': float(df.loc[i, 'Service rating']),
+                                               'a_rate': float(df.loc[i, 'Ambience rating']),
+                                               'v_rate': float(df.loc[i, 'Value rating']),
+                                               'rate_dist': str(df.loc[i, 'Rating distribution']),
+                                               'rec': str(df.loc[i, 'Recommendations']),
+                                               'id': int(id)})
 
         else:
             logging.debug(str(i) + ' restaurant not found')
@@ -214,4 +214,3 @@ def build_db(user, password):
             connection.commit()
 
     logging.info('Database updated:' + DB_NAME)
-

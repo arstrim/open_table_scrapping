@@ -2,6 +2,7 @@
 from scrape.restaurant_class import Restaurant
 import pandas as pd
 import os
+import logging
 
 PATH = os.path.join('data', "100restaurants.csv")
 
@@ -23,55 +24,55 @@ def restaurant_info(rest_links, restaurants, locations):
     locations_zipcode = []
     i = 0
 
-    print('Writing 100restaurants.csv')
+    logging.info('Writing 100restaurants.csv')
 
     for idx, link in enumerate(rest_links):
-        print('Writing', idx, "of", len(rest_links))
+        logging.info('Writing ' +  str(idx) + " of " + str(len(rest_links)))
         i += 1
         temp_res = Restaurant(link)
         try:
             food_rating.append(temp_res.get_overall_rating()['food'])
-        except:
+        except (IndexError, AttributeError):
             food_rating.append('None')
 
         try:
             service_rating.append(temp_res.get_overall_rating()['service'])
-        except:
+        except (IndexError, AttributeError):
             service_rating.append('None')
 
         try:
             ambience_rating.append(temp_res.get_overall_rating()['ambience'])
-        except:
+        except (IndexError, AttributeError):
             ambience_rating.append('None')
 
         try:
             value_rating.append(temp_res.get_overall_rating()['value'])
-        except:
+        except (IndexError, AttributeError):
             value_rating.append('None')
 
         try:
             rating_distributions.append(temp_res.rating_distribution())
-        except:
+        except AttributeError:
             rating_distributions.append('None')
 
         try:
             noise_status.append(temp_res.noise())
-        except:
+        except AttributeError:
             noise_status.append('None')
 
         try:
             recommendations.append(temp_res.recommendation())
-        except:
+        except AttributeError:
             recommendations.append('None')
 
         try:
             nums_of_reviews.append(temp_res.num_of_reviews())
-        except:
+        except AttributeError:
             nums_of_reviews.append('None')
 
         try:
             cuisine_type.append(temp_res.cuisine_type())
-        except:
+        except (IndexError, AttributeError):
             cuisine_type.append('None')
 
         try:
@@ -79,7 +80,7 @@ def restaurant_info(rest_links, restaurants, locations):
                 locations_zipcode.append(temp_res.location())
             else:
                 locations_zipcode.append(locations[idx])
-        except:
+        except AttributeError:
             locations_zipcode.append(None)
 
     # Creating data base

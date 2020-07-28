@@ -5,9 +5,12 @@ from datetime import datetime
 import datetime as today
 import pandas as pd
 import os
+import string
+import logging
 
 MAX_PAGES = 2
-PATH = os.path.join('data',"reviews.csv")
+PATH = os.path.join('data', "reviews.csv")
+
 
 def get_date(review, scrap_date):
     """
@@ -27,7 +30,7 @@ def get_date(review, scrap_date):
             date = datetime.strptime(date[9:], '%B %d, %Y')
         else:
             date = datetime.strptime(date[12:], '%B %d, %Y')
-    except:
+    except AttributeError:
         date = None
     else:
         if date < scrap_date:
@@ -54,19 +57,20 @@ def get_comment_info(review, scrap_date):
 
     try:
         place = review.find('span', class_='oc-reviews-9fda5cd0').text
-    except:
+    except AttributeError:
         place = None
     try:
         rating = review.find('div', class_='oc-reviews-0d90fee7').text
-    except:
+    except AttributeError:
         rating = None
     try:
-        comment = review.find('p').text
-    except:
+        dirty_comment = review.find('p').text
+        comment = ''.join([i if i in string.printable else '' for i in dirty_comment])
+    except AttributeError:
         comment = None
     try:
         vip = True if review.find('span', class_='oc-reviews-42b9159d').text == 'vip' else False
-    except:
+    except AttributeError:
         vip = False
 
     user = review.find('div', class_='oc-reviews-954a6007').find_all('span')[1].text
@@ -124,19 +128,19 @@ def get_reviews(rest_link, rest_name, scrap_date):
                 comments.append(comment)
                 try:
                     overall.append(int(re.split(r'(\d)', rating)[1]))
-                except:
+                except IndexError:
                     overall.append(None)
                 try:
                     food.append(int(re.split(r'(\d)', rating)[3]))
-                except:
+                except IndexError:
                     food.append(None)
                 try:
                     service.append(int(re.split(r'(\d)', rating)[5]))
-                except:
+                except IndexError:
                     service.append(None)
                 try:
                     ambience.append(int(re.split(r'(\d)', rating)[7]))
-                except:
+                except IndexError:
                     ambience.append(None)
 
                 dates.append(date)
@@ -161,7 +165,7 @@ def get_all_reviews(rest_links, restaurants, scrap_date):
     all_users = []
     all_n_revs = []
     for i in range(len(rest_links)):
-        print('Now scraping reviews of restaurant {i} out of {total}'.format(i=i+1, total=len(rest_links)))
+        logging.info('Now scraping reviews of restaurant {i} out of {total}'.format(i=i+1, total=len(rest_links)))
         (names, places, comments, overall, food, service, ambience, dates, vips, users, n_revs) = \
             get_reviews(rest_links[i], restaurants[i], scrap_date)
         all_names += names

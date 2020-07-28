@@ -11,6 +11,7 @@ import api.weather_api_queries as q
 
 API_LIMIT = 1000
 
+
 def build_weathers(connection):
     """
     Creates table weathers and creates new foreign key to reviews table
@@ -118,7 +119,11 @@ def weather_api(user, password):
     :param password: password of the database
     :return: None
     """
-    connection = make_connection_db(user, password)
+    try:
+        connection = make_connection_db(user, password)
+    except pymysql.err.InternalError:
+        logging.critical('Database not found, please load database before trying this api')
+        sys.exit()
     build_weathers(connection)
     with connection.cursor() as cur:
         cur.execute(q.select_weather_parameters)
@@ -133,7 +138,7 @@ def weather_api(user, password):
 
     # for i in range(40, 100): #TODO change for less calls in debug
     for i in range(len(result)):
-        logging.debug('looping ' + str(i) + ' of total ' + str(len(result)))
+        logging.info('looping ' + str(i) + ' of total ' + str(len(result)))
         weather_id = exists_weather_id(connection, result[i])
         if weather_id is None:
             get_weather(connection, result[i], keys[k])
